@@ -1,0 +1,2 @@
+# Output products list for <czestotliwosc>
+czestotliwosc_flist.txt

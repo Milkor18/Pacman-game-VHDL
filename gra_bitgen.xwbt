@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\projekty\GraVGA\gra.ncd
+OUTFILE=D:\projekty\GraVGA\gra.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5tq144
+WORKINGDIR=D:\projekty\GraVGA
+LICENSE=WebPack
+USER_INFO=211818517_0_0_240
