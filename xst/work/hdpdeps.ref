@@ -1,24 +1,24 @@
 V3 19
-FL D:/projekty/GraVGA/czestotliwosc.vhd 2020/03/23.23:16:25 P.20131013
-EN work/czestotliwosc 1585028542 FL D:/projekty/GraVGA/czestotliwosc.vhd \
+FL D:/projekty/GraVGA/czestotliwosc.vhd 2020/03/24.00:16:25 P.20131013
+EN work/czestotliwosc 1587340589 FL D:/projekty/GraVGA/czestotliwosc.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/czestotliwosc/BEHAVIORAL 1585028543 \
-      FL D:/projekty/GraVGA/czestotliwosc.vhd EN work/czestotliwosc 1585028542 \
+AR work/czestotliwosc/BEHAVIORAL 1587340590 \
+      FL D:/projekty/GraVGA/czestotliwosc.vhd EN work/czestotliwosc 1587340589 \
       CP BUFG CP IBUFG CP DCM_SP
-FL D:/projekty/GraVGA/gra.vhd 2020/03/24.03:29:13 P.20131013
-EN work/gra 1585028546 FL D:/projekty/GraVGA/gra.vhd PB ieee/std_logic_1164 1381692176
-AR work/gra/Behavioral 1585028547 \
-      FL D:/projekty/GraVGA/gra.vhd EN work/gra 1585028546 CP czestotliwosc \
+FL D:/projekty/GraVGA/gra.vhd 2020/03/24.04:29:13 P.20131013
+EN work/gra 1587340593 FL D:/projekty/GraVGA/gra.vhd PB ieee/std_logic_1164 1381692176
+AR work/gra/Behavioral 1587340594 \
+      FL D:/projekty/GraVGA/gra.vhd EN work/gra 1587340593 CP czestotliwosc \
       CP synchronizacja
-FL D:/projekty/GraVGA/kwadrat.vhd 2020/03/24.06:42:02 P.20131013
-EN work/kwadrat 1585028540 FL D:/projekty/GraVGA/kwadrat.vhd \
+FL D:/projekty/GraVGA/kwadrat.vhd 2020/04/20.01:56:23 P.20131013
+EN work/kwadrat 1587340587 FL D:/projekty/GraVGA/kwadrat.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/kwadrat/Behavioral 1585028541 \
-      FL D:/projekty/GraVGA/kwadrat.vhd EN work/kwadrat 1585028540
-FL D:/projekty/GraVGA/synchronizacja.vhd 2020/03/24.06:26:43 P.20131013
-EN work/synchronizacja 1585028544 FL D:/projekty/GraVGA/synchronizacja.vhd \
+AR work/kwadrat/Behavioral 1587340588 \
+      FL D:/projekty/GraVGA/kwadrat.vhd EN work/kwadrat 1587340587
+FL D:/projekty/GraVGA/synchronizacja.vhd 2020/04/20.00:59:58 P.20131013
+EN work/synchronizacja 1587340591 FL D:/projekty/GraVGA/synchronizacja.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/synchronizacja/Behavioral 1585028545 \
-      FL D:/projekty/GraVGA/synchronizacja.vhd EN work/synchronizacja 1585028544 \
+AR work/synchronizacja/Behavioral 1587340592 \
+      FL D:/projekty/GraVGA/synchronizacja.vhd EN work/synchronizacja 1587340591 \
       CP kwadrat

@@ -9,23 +9,23 @@ Target Device  : xc3s50a
 Target Package : tq144
 Target Speed   : -5
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Tue Mar 24 06:42:40 2020
+Mapped Date    : Mon Apr 20 01:56:44 2020
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:            87 out of   1,408    6%
-  Number of 4 input LUTs:             1,204 out of   1,408   85%
+  Number of Slice Flip Flops:           290 out of   1,408   20%
+  Number of 4 input LUTs:             1,112 out of   1,408   78%
 Logic Distribution:
-  Number of occupied Slices:            683 out of     704   97%
-    Number of Slices containing only related logic:     683 out of     683 100%
-    Number of Slices containing unrelated logic:          0 out of     683   0%
+  Number of occupied Slices:            680 out of     704   96%
+    Number of Slices containing only related logic:     680 out of     680 100%
+    Number of Slices containing unrelated logic:          0 out of     680   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:       1,336 out of   1,408   94%
-    Number used as logic:             1,204
-    Number used as a route-thru:        132
+    Number used as logic:             1,112
+    Number used as a route-thru:        224
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -34,7 +34,7 @@ Logic Distribution:
   Number of BUFGMUXs:                     2 out of      24    8%
   Number of DCMs:                         1 out of       2   50%
 
-Average Fanout of Non-Clock Nets:                2.23
+Average Fanout of Non-Clock Nets:                3.11
 
 Peak Memory Usage:  4442 MB
 Total REAL time to MAP completion:  2 secs 
@@ -94,7 +94,7 @@ INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   2 block(s) optimized away
+   3 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
@@ -103,6 +103,7 @@ Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
 VCC 		XST_VCC
+MUXCY 		display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<0>
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

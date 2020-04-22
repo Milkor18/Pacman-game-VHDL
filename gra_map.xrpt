@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Tue Mar 24 06:42:42 2020">
+  <application stringID="Map" timeStamp="Mon Apr 20 01:56:46 2020">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\14.7\ISE_DS\ISE\\lib\nt64;D:\14.7\ISE_DS\ISE\\bin\nt64;D:\14.7\ISE_DS\ISE\bin\nt64;D:\14.7\ISE_DS\ISE\lib\nt64;D:\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\14.7\ISE_DS\PlanAhead\bin;D:\14.7\ISE_DS\EDK\bin\nt64;D:\14.7\ISE_DS\EDK\lib\nt64;D:\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\14.7\ISE_DS\EDK\gnuwin\bin;D:\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\14.7\ISE_DS\common\bin\nt64;D:\14.7\ISE_DS\common\lib\nt64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\milen\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="value" value="D:\14.7\ISE_DS\ISE\\lib\nt64;D:\14.7\ISE_DS\ISE\\bin\nt64;D:\14.7\ISE_DS\ISE\bin\nt64;D:\14.7\ISE_DS\ISE\lib\nt64;D:\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\14.7\ISE_DS\PlanAhead\bin;D:\14.7\ISE_DS\EDK\bin\nt64;D:\14.7\ISE_DS\EDK\lib\nt64;D:\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\14.7\ISE_DS\EDK\gnuwin\bin;D:\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\14.7\ISE_DS\common\bin\nt64;D:\14.7\ISE_DS\common\lib\nt64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\milen\AppData\Local\Microsoft\WindowsApps"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -69,16 +69,16 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="4548936"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="4548924"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="2 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="2 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="1408" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="87"/>
+        <item AVAILABLE="1408" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="290"/>
         <item AVAILABLE="1408" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="1336">
-          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="132"/>
+          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="224"/>
         </item>
-        <item AVAILABLE="704" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="683">
+        <item AVAILABLE="704" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="680">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
@@ -251,7 +251,7 @@
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="59"/>
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="46"/>
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>

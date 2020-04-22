@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-03-24T06:40:53</DateModified>
+  <DateModified>2020-04-20T00:57:49</DateModified>
   <ModuleName>gra</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2020-04-20T00:56:09</SummaryTimeStamp>
   <SavedFilePath>D:/projekty/GraVGA/iseconfig/gra.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/projekty/GraVGA</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/projekty/GraVGA\</ImplementationReportsDirectory>
   <DateInitialized>2020-03-24T06:40:53</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

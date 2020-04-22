@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Tue Mar 24 06:42:45 2020">
+  <application stringID="par" timeStamp="Mon Apr 20 01:56:49 2020">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\14.7\ISE_DS\ISE\\lib\nt64;D:\14.7\ISE_DS\ISE\\bin\nt64;D:\14.7\ISE_DS\ISE\bin\nt64;D:\14.7\ISE_DS\ISE\lib\nt64;D:\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\14.7\ISE_DS\PlanAhead\bin;D:\14.7\ISE_DS\EDK\bin\nt64;D:\14.7\ISE_DS\EDK\lib\nt64;D:\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\14.7\ISE_DS\EDK\gnuwin\bin;D:\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\14.7\ISE_DS\common\bin\nt64;D:\14.7\ISE_DS\common\lib\nt64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\milen\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="value" value="D:\14.7\ISE_DS\ISE\\lib\nt64;D:\14.7\ISE_DS\ISE\\bin\nt64;D:\14.7\ISE_DS\ISE\bin\nt64;D:\14.7\ISE_DS\ISE\lib\nt64;D:\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\14.7\ISE_DS\PlanAhead\bin;D:\14.7\ISE_DS\EDK\bin\nt64;D:\14.7\ISE_DS\EDK\lib\nt64;D:\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\14.7\ISE_DS\EDK\gnuwin\bin;D:\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\14.7\ISE_DS\common\bin\nt64;D:\14.7\ISE_DS\common\lib\nt64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\milen\AppData\Local\Microsoft\WindowsApps"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -59,13 +59,13 @@
     </task>
     <task stringID="PAR_DEVICE_UTILIZATION">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item AVAILABLE="704" dataType="int" stringID="PAR_SLICES" value="683"></item>
+        <item AVAILABLE="704" dataType="int" stringID="PAR_SLICES" value="680"></item>
       </section>
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="6 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="6 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="5 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="5 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
         <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="6 secs "/>
@@ -88,9 +88,9 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X1Y10"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="77.000000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="154.000000"/>
             <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.135000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.629000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.598000"/>
           </row>
         </table>
       </section>

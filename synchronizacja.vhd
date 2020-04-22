@@ -16,8 +16,8 @@ end synchronizacja;
 
 architecture Behavioral of synchronizacja is
 
-signal x : integer range 0 to 1023;
-signal y : integer range 0 to 1023;
+signal x : integer;
+signal y : integer;
 signal rgb : std_logic_vector(7 downto 0);
 begin
 
