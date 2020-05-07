@@ -77,911 +77,833 @@ Timing constraint: PERIOD analysis for net "pixel_clock/CLKFX_BUF" derived from
 2.08 to 40.000 nS and duty cycle corrected to HIGH 19.999 nS  
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 678428 paths analyzed, 1153 endpoints analyzed, 0 failing endpoints
+ 930328 paths analyzed, 1080 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  14.430ns.
+ Minimum period is  12.366ns.
 --------------------------------------------------------------------------------
 
-Paths for end point display/wezkwadrat/pozycjakwadratuX_31 (SLICE_X17Y29.F1), 2108 paths
+Paths for end point display/wezkwadrat/bokA_16 (SLICE_X15Y8.CE), 6340 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     25.570ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               display/wezkwadrat/pozycjakwadratuX_10 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_31 (FF)
+Slack (setup path):     27.634ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               display/wezkwadrat/pozycjajedzeniaX_3 (FF)
+  Destination:          display/wezkwadrat/bokA_16 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      14.354ns (Levels of Logic = 21)
-  Clock Path Skew:      -0.076ns (0.465 - 0.541)
+  Data Path Delay:      12.373ns (Levels of Logic = 16)
+  Clock Path Skew:      0.007ns (0.254 - 0.247)
   Source Clock:         clk25mhz rising at 0.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: display/wezkwadrat/pozycjakwadratuX_10 to display/wezkwadrat/pozycjakwadratuX_31
+  Maximum Data Path: display/wezkwadrat/pozycjajedzeniaX_3 to display/wezkwadrat/bokA_16
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y1.YQ       Tcko                  0.596   display/wezkwadrat/pozycjakwadratuX<11>
-                                                       display/wezkwadrat/pozycjakwadratuX_10
-    SLICE_X16Y24.F1      net (fanout=8)        2.482   display/wezkwadrat/pozycjakwadratuX<10>
-    SLICE_X16Y24.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_lut<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<6>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<8>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.XB      Tcinxb                0.313   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<10>
-    SLICE_X16Y29.G4      net (fanout=1)        0.582   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-    SLICE_X16Y29.Y       Tilo                  0.616   display/wezkwadrat/pozycjakwadratuX_mux0003<0>
-                                                       display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421
-    SLICE_X23Y2.F1       net (fanout=63)       1.935   display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042
-    SLICE_X23Y2.X        Tilo                  0.562   display/wezkwadrat/pozycjakwadratuX_mux0003<4>
-                                                       display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003541
-    SLICE_X18Y2.BX       net (fanout=1)        0.550   display/wezkwadrat/pozycjakwadratuX_mux0003<4>
-    SLICE_X18Y2.COUT     Tbxcy                 0.971   display/wezkwadrat/pozycjakwadratuX_share0000<4>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<4>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.Y       Tciny                 0.691   display/wezkwadrat/pozycjakwadratuX_share0000<30>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<30>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<31>
-    SLICE_X17Y29.F1      net (fanout=1)        1.137   display/wezkwadrat/pozycjakwadratuX_share0000<31>
-    SLICE_X17Y29.CLK     Tfck                  0.602   display/wezkwadrat/pozycjakwadratuX<31>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<31>1
-                                                       display/wezkwadrat/pozycjakwadratuX_31
+    SLICE_X10Y17.XQ      Tcko                  0.521   display/wezkwadrat/pozycjajedzeniaX<3>
+                                                       display/wezkwadrat/pozycjajedzeniaX_3
+    SLICE_X17Y17.F1      net (fanout=3)        1.586   display/wezkwadrat/pozycjajedzeniaX<3>
+    SLICE_X17Y17.Y       Topy                  1.560   display/wezkwadrat/przyspieszenie_add0000<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_lut<3>_INV_0
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_xor<4>
+    SLICE_X18Y17.F4      net (fanout=2)        0.413   display/wezkwadrat/przyspieszenie_add0000<4>
+    SLICE_X18Y17.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_lut<4>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<4>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<6>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<10>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<12>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<14>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<16>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<18>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<20>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<22>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<24>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<26>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<28>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<30>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.G1      net (fanout=5)        2.185   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.X       Tif5x                 0.853   display/wezkwadrat/bokA_not0001
+                                                       display/wezkwadrat/bokA_not000111
+                                                       display/wezkwadrat/bokA_not00011_f5
+    SLICE_X15Y8.CE       net (fanout=16)       1.939   display/wezkwadrat/bokA_not0001
+    SLICE_X15Y8.CLK      Tceck                 0.155   display/wezkwadrat/bokA<16>
+                                                       display/wezkwadrat/bokA_16
     -------------------------------------------------  ---------------------------
-    Total                                     14.354ns (7.668ns logic, 6.686ns route)
-                                                       (53.4% logic, 46.6% route)
+    Total                                     12.373ns (6.250ns logic, 6.123ns route)
+                                                       (50.5% logic, 49.5% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     25.633ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               display/wezkwadrat/pozycjakwadratuX_10 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_31 (FF)
+Slack (setup path):     27.766ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               display/wezkwadrat/pozycjajedzeniaX_3 (FF)
+  Destination:          display/wezkwadrat/bokA_16 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      14.291ns (Levels of Logic = 20)
-  Clock Path Skew:      -0.076ns (0.465 - 0.541)
+  Data Path Delay:      12.241ns (Levels of Logic = 16)
+  Clock Path Skew:      0.007ns (0.254 - 0.247)
   Source Clock:         clk25mhz rising at 0.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: display/wezkwadrat/pozycjakwadratuX_10 to display/wezkwadrat/pozycjakwadratuX_31
+  Maximum Data Path: display/wezkwadrat/pozycjajedzeniaX_3 to display/wezkwadrat/bokA_16
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y1.YQ       Tcko                  0.596   display/wezkwadrat/pozycjakwadratuX<11>
-                                                       display/wezkwadrat/pozycjakwadratuX_10
-    SLICE_X16Y24.F1      net (fanout=8)        2.482   display/wezkwadrat/pozycjakwadratuX<10>
-    SLICE_X16Y24.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_lut<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<6>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<8>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.XB      Tcinxb                0.313   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<10>
-    SLICE_X16Y29.G4      net (fanout=1)        0.582   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-    SLICE_X16Y29.Y       Tilo                  0.616   display/wezkwadrat/pozycjakwadratuX_mux0003<0>
-                                                       display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421
-    SLICE_X17Y3.F1       net (fanout=63)       2.222   display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042
-    SLICE_X17Y3.X        Tilo                  0.562   display/wezkwadrat/pozycjakwadratuX_mux0003<7>
-                                                       display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003601
-    SLICE_X18Y3.BY       net (fanout=1)        0.356   display/wezkwadrat/pozycjakwadratuX_mux0003<7>
-    SLICE_X18Y3.COUT     Tbycy                 0.971   display/wezkwadrat/pozycjakwadratuX_share0000<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.Y       Tciny                 0.691   display/wezkwadrat/pozycjakwadratuX_share0000<30>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<30>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<31>
-    SLICE_X17Y29.F1      net (fanout=1)        1.137   display/wezkwadrat/pozycjakwadratuX_share0000<31>
-    SLICE_X17Y29.CLK     Tfck                  0.602   display/wezkwadrat/pozycjakwadratuX<31>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<31>1
-                                                       display/wezkwadrat/pozycjakwadratuX_31
+    SLICE_X10Y17.XQ      Tcko                  0.521   display/wezkwadrat/pozycjajedzeniaX<3>
+                                                       display/wezkwadrat/pozycjajedzeniaX_3
+    SLICE_X17Y17.F1      net (fanout=3)        1.586   display/wezkwadrat/pozycjajedzeniaX<3>
+    SLICE_X17Y17.COUT    Topcyf                1.026   display/wezkwadrat/przyspieszenie_add0000<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_lut<3>_INV_0
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.COUT    Tbyp                  0.130   display/wezkwadrat/przyspieszenie_add0000<5>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<5>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<6>
+    SLICE_X17Y19.CIN     net (fanout=1)        0.000   display/wezkwadrat/Madd_przyspieszenie_add0000_cy<6>
+    SLICE_X17Y19.Y       Tciny                 0.664   display/wezkwadrat/przyspieszenie_add0000<7>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<7>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_xor<8>
+    SLICE_X18Y19.F2      net (fanout=2)        0.333   display/wezkwadrat/przyspieszenie_add0000<8>
+    SLICE_X18Y19.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_lut<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<10>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<12>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<14>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<16>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<18>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<20>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<22>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<24>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<26>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<28>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<30>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.G1      net (fanout=5)        2.185   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.X       Tif5x                 0.853   display/wezkwadrat/bokA_not0001
+                                                       display/wezkwadrat/bokA_not000111
+                                                       display/wezkwadrat/bokA_not00011_f5
+    SLICE_X15Y8.CE       net (fanout=16)       1.939   display/wezkwadrat/bokA_not0001
+    SLICE_X15Y8.CLK      Tceck                 0.155   display/wezkwadrat/bokA<16>
+                                                       display/wezkwadrat/bokA_16
     -------------------------------------------------  ---------------------------
-    Total                                     14.291ns (7.512ns logic, 6.779ns route)
-                                                       (52.6% logic, 47.4% route)
+    Total                                     12.241ns (6.198ns logic, 6.043ns route)
+                                                       (50.6% logic, 49.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     25.771ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               display/wezkwadrat/pozycjakwadratuX_10 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_31 (FF)
+Slack (setup path):     27.793ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               display/wezkwadrat/pozycjajedzeniaX_3 (FF)
+  Destination:          display/wezkwadrat/bokA_16 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      14.153ns (Levels of Logic = 21)
-  Clock Path Skew:      -0.076ns (0.465 - 0.541)
+  Data Path Delay:      12.214ns (Levels of Logic = 17)
+  Clock Path Skew:      0.007ns (0.254 - 0.247)
   Source Clock:         clk25mhz rising at 0.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: display/wezkwadrat/pozycjakwadratuX_10 to display/wezkwadrat/pozycjakwadratuX_31
+  Maximum Data Path: display/wezkwadrat/pozycjajedzeniaX_3 to display/wezkwadrat/bokA_16
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y1.YQ       Tcko                  0.596   display/wezkwadrat/pozycjakwadratuX<11>
-                                                       display/wezkwadrat/pozycjakwadratuX_10
-    SLICE_X16Y24.F1      net (fanout=8)        2.482   display/wezkwadrat/pozycjakwadratuX<10>
-    SLICE_X16Y24.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_lut<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<6>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<8>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.XB      Tcinxb                0.313   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<10>
-    SLICE_X16Y29.G4      net (fanout=1)        0.582   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-    SLICE_X16Y29.Y       Tilo                  0.616   display/wezkwadrat/pozycjakwadratuX_mux0003<0>
-                                                       display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421
-    SLICE_X17Y2.F3       net (fanout=63)       1.717   display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042
-    SLICE_X17Y2.X        Tilo                  0.562   display/wezkwadrat/pozycjakwadratuX_mux0003<5>
-                                                       display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003561
-    SLICE_X18Y2.BY       net (fanout=1)        0.567   display/wezkwadrat/pozycjakwadratuX_mux0003<5>
-    SLICE_X18Y2.COUT     Tbycy                 0.971   display/wezkwadrat/pozycjakwadratuX_share0000<4>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.Y       Tciny                 0.691   display/wezkwadrat/pozycjakwadratuX_share0000<30>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<30>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<31>
-    SLICE_X17Y29.F1      net (fanout=1)        1.137   display/wezkwadrat/pozycjakwadratuX_share0000<31>
-    SLICE_X17Y29.CLK     Tfck                  0.602   display/wezkwadrat/pozycjakwadratuX<31>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<31>1
-                                                       display/wezkwadrat/pozycjakwadratuX_31
+    SLICE_X10Y17.XQ      Tcko                  0.521   display/wezkwadrat/pozycjajedzeniaX<3>
+                                                       display/wezkwadrat/pozycjajedzeniaX_3
+    SLICE_X17Y17.F1      net (fanout=3)        1.586   display/wezkwadrat/pozycjajedzeniaX<3>
+    SLICE_X17Y17.COUT    Topcyf                1.026   display/wezkwadrat/przyspieszenie_add0000<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_lut<3>_INV_0
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.X       Tcinx                 0.489   display/wezkwadrat/przyspieszenie_add0000<5>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_xor<5>
+    SLICE_X18Y17.G3      net (fanout=2)        0.305   display/wezkwadrat/przyspieszenie_add0000<5>
+    SLICE_X18Y17.COUT    Topcyg                1.127   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_lut<5>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<6>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<10>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<12>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<14>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<16>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<18>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<20>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<22>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<24>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<26>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<28>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<30>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.G1      net (fanout=5)        2.185   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.X       Tif5x                 0.853   display/wezkwadrat/bokA_not0001
+                                                       display/wezkwadrat/bokA_not000111
+                                                       display/wezkwadrat/bokA_not00011_f5
+    SLICE_X15Y8.CE       net (fanout=16)       1.939   display/wezkwadrat/bokA_not0001
+    SLICE_X15Y8.CLK      Tceck                 0.155   display/wezkwadrat/bokA<16>
+                                                       display/wezkwadrat/bokA_16
     -------------------------------------------------  ---------------------------
-    Total                                     14.153ns (7.668ns logic, 6.485ns route)
-                                                       (54.2% logic, 45.8% route)
+    Total                                     12.214ns (6.199ns logic, 6.015ns route)
+                                                       (50.8% logic, 49.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point display/wezkwadrat/pozycjakwadratuX_29 (SLICE_X16Y28.F2), 1976 paths
+Paths for end point display/wezkwadrat/bokA_17 (SLICE_X15Y8.CE), 6340 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     25.776ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               display/wezkwadrat/pozycjakwadratuX_10 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_29 (FF)
+Slack (setup path):     27.634ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               display/wezkwadrat/pozycjajedzeniaX_3 (FF)
+  Destination:          display/wezkwadrat/bokA_17 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      14.148ns (Levels of Logic = 20)
-  Clock Path Skew:      -0.076ns (0.465 - 0.541)
+  Data Path Delay:      12.373ns (Levels of Logic = 16)
+  Clock Path Skew:      0.007ns (0.254 - 0.247)
   Source Clock:         clk25mhz rising at 0.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: display/wezkwadrat/pozycjakwadratuX_10 to display/wezkwadrat/pozycjakwadratuX_29
+  Maximum Data Path: display/wezkwadrat/pozycjajedzeniaX_3 to display/wezkwadrat/bokA_17
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y1.YQ       Tcko                  0.596   display/wezkwadrat/pozycjakwadratuX<11>
-                                                       display/wezkwadrat/pozycjakwadratuX_10
-    SLICE_X16Y24.F1      net (fanout=8)        2.482   display/wezkwadrat/pozycjakwadratuX<10>
-    SLICE_X16Y24.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_lut<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<6>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<8>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.XB      Tcinxb                0.313   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<10>
-    SLICE_X16Y29.G4      net (fanout=1)        0.582   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-    SLICE_X16Y29.Y       Tilo                  0.616   display/wezkwadrat/pozycjakwadratuX_mux0003<0>
-                                                       display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421
-    SLICE_X23Y2.F1       net (fanout=63)       1.935   display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042
-    SLICE_X23Y2.X        Tilo                  0.562   display/wezkwadrat/pozycjakwadratuX_mux0003<4>
-                                                       display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003541
-    SLICE_X18Y2.BX       net (fanout=1)        0.550   display/wezkwadrat/pozycjakwadratuX_mux0003<4>
-    SLICE_X18Y2.COUT     Tbxcy                 0.971   display/wezkwadrat/pozycjakwadratuX_share0000<4>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<4>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.Y       Tciny                 0.691   display/wezkwadrat/pozycjakwadratuX_share0000<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<29>
-    SLICE_X16Y28.F2      net (fanout=1)        1.033   display/wezkwadrat/pozycjakwadratuX_share0000<29>
-    SLICE_X16Y28.CLK     Tfck                  0.656   display/wezkwadrat/pozycjakwadratuX<29>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<29>1
-                                                       display/wezkwadrat/pozycjakwadratuX_29
+    SLICE_X10Y17.XQ      Tcko                  0.521   display/wezkwadrat/pozycjajedzeniaX<3>
+                                                       display/wezkwadrat/pozycjajedzeniaX_3
+    SLICE_X17Y17.F1      net (fanout=3)        1.586   display/wezkwadrat/pozycjajedzeniaX<3>
+    SLICE_X17Y17.Y       Topy                  1.560   display/wezkwadrat/przyspieszenie_add0000<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_lut<3>_INV_0
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_xor<4>
+    SLICE_X18Y17.F4      net (fanout=2)        0.413   display/wezkwadrat/przyspieszenie_add0000<4>
+    SLICE_X18Y17.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_lut<4>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<4>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<6>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<10>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<12>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<14>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<16>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<18>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<20>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<22>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<24>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<26>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<28>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<30>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.G1      net (fanout=5)        2.185   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.X       Tif5x                 0.853   display/wezkwadrat/bokA_not0001
+                                                       display/wezkwadrat/bokA_not000111
+                                                       display/wezkwadrat/bokA_not00011_f5
+    SLICE_X15Y8.CE       net (fanout=16)       1.939   display/wezkwadrat/bokA_not0001
+    SLICE_X15Y8.CLK      Tceck                 0.155   display/wezkwadrat/bokA<16>
+                                                       display/wezkwadrat/bokA_17
     -------------------------------------------------  ---------------------------
-    Total                                     14.148ns (7.566ns logic, 6.582ns route)
-                                                       (53.5% logic, 46.5% route)
+    Total                                     12.373ns (6.250ns logic, 6.123ns route)
+                                                       (50.5% logic, 49.5% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     25.839ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               display/wezkwadrat/pozycjakwadratuX_10 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_29 (FF)
+Slack (setup path):     27.766ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               display/wezkwadrat/pozycjajedzeniaX_3 (FF)
+  Destination:          display/wezkwadrat/bokA_17 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      14.085ns (Levels of Logic = 19)
-  Clock Path Skew:      -0.076ns (0.465 - 0.541)
+  Data Path Delay:      12.241ns (Levels of Logic = 16)
+  Clock Path Skew:      0.007ns (0.254 - 0.247)
   Source Clock:         clk25mhz rising at 0.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: display/wezkwadrat/pozycjakwadratuX_10 to display/wezkwadrat/pozycjakwadratuX_29
+  Maximum Data Path: display/wezkwadrat/pozycjajedzeniaX_3 to display/wezkwadrat/bokA_17
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y1.YQ       Tcko                  0.596   display/wezkwadrat/pozycjakwadratuX<11>
-                                                       display/wezkwadrat/pozycjakwadratuX_10
-    SLICE_X16Y24.F1      net (fanout=8)        2.482   display/wezkwadrat/pozycjakwadratuX<10>
-    SLICE_X16Y24.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_lut<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<6>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<8>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.XB      Tcinxb                0.313   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<10>
-    SLICE_X16Y29.G4      net (fanout=1)        0.582   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-    SLICE_X16Y29.Y       Tilo                  0.616   display/wezkwadrat/pozycjakwadratuX_mux0003<0>
-                                                       display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421
-    SLICE_X17Y3.F1       net (fanout=63)       2.222   display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042
-    SLICE_X17Y3.X        Tilo                  0.562   display/wezkwadrat/pozycjakwadratuX_mux0003<7>
-                                                       display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003601
-    SLICE_X18Y3.BY       net (fanout=1)        0.356   display/wezkwadrat/pozycjakwadratuX_mux0003<7>
-    SLICE_X18Y3.COUT     Tbycy                 0.971   display/wezkwadrat/pozycjakwadratuX_share0000<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.Y       Tciny                 0.691   display/wezkwadrat/pozycjakwadratuX_share0000<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<29>
-    SLICE_X16Y28.F2      net (fanout=1)        1.033   display/wezkwadrat/pozycjakwadratuX_share0000<29>
-    SLICE_X16Y28.CLK     Tfck                  0.656   display/wezkwadrat/pozycjakwadratuX<29>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<29>1
-                                                       display/wezkwadrat/pozycjakwadratuX_29
+    SLICE_X10Y17.XQ      Tcko                  0.521   display/wezkwadrat/pozycjajedzeniaX<3>
+                                                       display/wezkwadrat/pozycjajedzeniaX_3
+    SLICE_X17Y17.F1      net (fanout=3)        1.586   display/wezkwadrat/pozycjajedzeniaX<3>
+    SLICE_X17Y17.COUT    Topcyf                1.026   display/wezkwadrat/przyspieszenie_add0000<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_lut<3>_INV_0
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.COUT    Tbyp                  0.130   display/wezkwadrat/przyspieszenie_add0000<5>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<5>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<6>
+    SLICE_X17Y19.CIN     net (fanout=1)        0.000   display/wezkwadrat/Madd_przyspieszenie_add0000_cy<6>
+    SLICE_X17Y19.Y       Tciny                 0.664   display/wezkwadrat/przyspieszenie_add0000<7>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<7>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_xor<8>
+    SLICE_X18Y19.F2      net (fanout=2)        0.333   display/wezkwadrat/przyspieszenie_add0000<8>
+    SLICE_X18Y19.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_lut<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<10>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<12>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<14>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<16>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<18>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<20>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<22>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<24>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<26>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<28>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<30>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.G1      net (fanout=5)        2.185   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.X       Tif5x                 0.853   display/wezkwadrat/bokA_not0001
+                                                       display/wezkwadrat/bokA_not000111
+                                                       display/wezkwadrat/bokA_not00011_f5
+    SLICE_X15Y8.CE       net (fanout=16)       1.939   display/wezkwadrat/bokA_not0001
+    SLICE_X15Y8.CLK      Tceck                 0.155   display/wezkwadrat/bokA<16>
+                                                       display/wezkwadrat/bokA_17
     -------------------------------------------------  ---------------------------
-    Total                                     14.085ns (7.410ns logic, 6.675ns route)
-                                                       (52.6% logic, 47.4% route)
+    Total                                     12.241ns (6.198ns logic, 6.043ns route)
+                                                       (50.6% logic, 49.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     25.977ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               display/wezkwadrat/pozycjakwadratuX_10 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_29 (FF)
+Slack (setup path):     27.793ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               display/wezkwadrat/pozycjajedzeniaX_3 (FF)
+  Destination:          display/wezkwadrat/bokA_17 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      13.947ns (Levels of Logic = 20)
-  Clock Path Skew:      -0.076ns (0.465 - 0.541)
+  Data Path Delay:      12.214ns (Levels of Logic = 17)
+  Clock Path Skew:      0.007ns (0.254 - 0.247)
   Source Clock:         clk25mhz rising at 0.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: display/wezkwadrat/pozycjakwadratuX_10 to display/wezkwadrat/pozycjakwadratuX_29
+  Maximum Data Path: display/wezkwadrat/pozycjajedzeniaX_3 to display/wezkwadrat/bokA_17
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y1.YQ       Tcko                  0.596   display/wezkwadrat/pozycjakwadratuX<11>
-                                                       display/wezkwadrat/pozycjakwadratuX_10
-    SLICE_X16Y24.F1      net (fanout=8)        2.482   display/wezkwadrat/pozycjakwadratuX<10>
-    SLICE_X16Y24.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_lut<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<6>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<8>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.XB      Tcinxb                0.313   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<10>
-    SLICE_X16Y29.G4      net (fanout=1)        0.582   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-    SLICE_X16Y29.Y       Tilo                  0.616   display/wezkwadrat/pozycjakwadratuX_mux0003<0>
-                                                       display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421
-    SLICE_X17Y2.F3       net (fanout=63)       1.717   display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042
-    SLICE_X17Y2.X        Tilo                  0.562   display/wezkwadrat/pozycjakwadratuX_mux0003<5>
-                                                       display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003561
-    SLICE_X18Y2.BY       net (fanout=1)        0.567   display/wezkwadrat/pozycjakwadratuX_mux0003<5>
-    SLICE_X18Y2.COUT     Tbycy                 0.971   display/wezkwadrat/pozycjakwadratuX_share0000<4>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.Y       Tciny                 0.691   display/wezkwadrat/pozycjakwadratuX_share0000<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<29>
-    SLICE_X16Y28.F2      net (fanout=1)        1.033   display/wezkwadrat/pozycjakwadratuX_share0000<29>
-    SLICE_X16Y28.CLK     Tfck                  0.656   display/wezkwadrat/pozycjakwadratuX<29>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<29>1
-                                                       display/wezkwadrat/pozycjakwadratuX_29
+    SLICE_X10Y17.XQ      Tcko                  0.521   display/wezkwadrat/pozycjajedzeniaX<3>
+                                                       display/wezkwadrat/pozycjajedzeniaX_3
+    SLICE_X17Y17.F1      net (fanout=3)        1.586   display/wezkwadrat/pozycjajedzeniaX<3>
+    SLICE_X17Y17.COUT    Topcyf                1.026   display/wezkwadrat/przyspieszenie_add0000<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_lut<3>_INV_0
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.X       Tcinx                 0.489   display/wezkwadrat/przyspieszenie_add0000<5>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_xor<5>
+    SLICE_X18Y17.G3      net (fanout=2)        0.305   display/wezkwadrat/przyspieszenie_add0000<5>
+    SLICE_X18Y17.COUT    Topcyg                1.127   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_lut<5>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<6>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<10>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<12>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<14>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<16>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<18>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<20>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<22>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<24>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<26>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<28>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<30>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.G1      net (fanout=5)        2.185   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.X       Tif5x                 0.853   display/wezkwadrat/bokA_not0001
+                                                       display/wezkwadrat/bokA_not000111
+                                                       display/wezkwadrat/bokA_not00011_f5
+    SLICE_X15Y8.CE       net (fanout=16)       1.939   display/wezkwadrat/bokA_not0001
+    SLICE_X15Y8.CLK      Tceck                 0.155   display/wezkwadrat/bokA<16>
+                                                       display/wezkwadrat/bokA_17
     -------------------------------------------------  ---------------------------
-    Total                                     13.947ns (7.566ns logic, 6.381ns route)
-                                                       (54.2% logic, 45.8% route)
+    Total                                     12.214ns (6.199ns logic, 6.015ns route)
+                                                       (50.8% logic, 49.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point display/wezkwadrat/pozycjakwadratuX_30 (SLICE_X17Y29.G1), 2042 paths
+Paths for end point display/wezkwadrat/bokA_18 (SLICE_X15Y9.CE), 6340 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     25.834ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               display/wezkwadrat/pozycjakwadratuX_10 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_30 (FF)
+Slack (setup path):     27.634ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               display/wezkwadrat/pozycjajedzeniaX_3 (FF)
+  Destination:          display/wezkwadrat/bokA_18 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      14.090ns (Levels of Logic = 21)
-  Clock Path Skew:      -0.076ns (0.465 - 0.541)
+  Data Path Delay:      12.373ns (Levels of Logic = 16)
+  Clock Path Skew:      0.007ns (0.254 - 0.247)
   Source Clock:         clk25mhz rising at 0.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: display/wezkwadrat/pozycjakwadratuX_10 to display/wezkwadrat/pozycjakwadratuX_30
+  Maximum Data Path: display/wezkwadrat/pozycjajedzeniaX_3 to display/wezkwadrat/bokA_18
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y1.YQ       Tcko                  0.596   display/wezkwadrat/pozycjakwadratuX<11>
-                                                       display/wezkwadrat/pozycjakwadratuX_10
-    SLICE_X16Y24.F1      net (fanout=8)        2.482   display/wezkwadrat/pozycjakwadratuX<10>
-    SLICE_X16Y24.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_lut<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<6>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<8>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.XB      Tcinxb                0.313   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<10>
-    SLICE_X16Y29.G4      net (fanout=1)        0.582   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-    SLICE_X16Y29.Y       Tilo                  0.616   display/wezkwadrat/pozycjakwadratuX_mux0003<0>
-                                                       display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421
-    SLICE_X23Y2.F1       net (fanout=63)       1.935   display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042
-    SLICE_X23Y2.X        Tilo                  0.562   display/wezkwadrat/pozycjakwadratuX_mux0003<4>
-                                                       display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003541
-    SLICE_X18Y2.BX       net (fanout=1)        0.550   display/wezkwadrat/pozycjakwadratuX_mux0003<4>
-    SLICE_X18Y2.COUT     Tbxcy                 0.971   display/wezkwadrat/pozycjakwadratuX_share0000<4>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<4>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.X       Tcinx                 0.454   display/wezkwadrat/pozycjakwadratuX_share0000<30>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<30>
-    SLICE_X17Y29.G1      net (fanout=1)        1.111   display/wezkwadrat/pozycjakwadratuX_share0000<30>
-    SLICE_X17Y29.CLK     Tgck                  0.601   display/wezkwadrat/pozycjakwadratuX<31>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<30>1
-                                                       display/wezkwadrat/pozycjakwadratuX_30
+    SLICE_X10Y17.XQ      Tcko                  0.521   display/wezkwadrat/pozycjajedzeniaX<3>
+                                                       display/wezkwadrat/pozycjajedzeniaX_3
+    SLICE_X17Y17.F1      net (fanout=3)        1.586   display/wezkwadrat/pozycjajedzeniaX<3>
+    SLICE_X17Y17.Y       Topy                  1.560   display/wezkwadrat/przyspieszenie_add0000<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_lut<3>_INV_0
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_xor<4>
+    SLICE_X18Y17.F4      net (fanout=2)        0.413   display/wezkwadrat/przyspieszenie_add0000<4>
+    SLICE_X18Y17.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_lut<4>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<4>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<6>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<10>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<12>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<14>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<16>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<18>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<20>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<22>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<24>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<26>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<28>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<30>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.G1      net (fanout=5)        2.185   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.X       Tif5x                 0.853   display/wezkwadrat/bokA_not0001
+                                                       display/wezkwadrat/bokA_not000111
+                                                       display/wezkwadrat/bokA_not00011_f5
+    SLICE_X15Y9.CE       net (fanout=16)       1.939   display/wezkwadrat/bokA_not0001
+    SLICE_X15Y9.CLK      Tceck                 0.155   display/wezkwadrat/bokA<18>
+                                                       display/wezkwadrat/bokA_18
     -------------------------------------------------  ---------------------------
-    Total                                     14.090ns (7.430ns logic, 6.660ns route)
-                                                       (52.7% logic, 47.3% route)
+    Total                                     12.373ns (6.250ns logic, 6.123ns route)
+                                                       (50.5% logic, 49.5% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     25.897ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               display/wezkwadrat/pozycjakwadratuX_10 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_30 (FF)
+Slack (setup path):     27.766ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               display/wezkwadrat/pozycjajedzeniaX_3 (FF)
+  Destination:          display/wezkwadrat/bokA_18 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      14.027ns (Levels of Logic = 20)
-  Clock Path Skew:      -0.076ns (0.465 - 0.541)
+  Data Path Delay:      12.241ns (Levels of Logic = 16)
+  Clock Path Skew:      0.007ns (0.254 - 0.247)
   Source Clock:         clk25mhz rising at 0.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: display/wezkwadrat/pozycjakwadratuX_10 to display/wezkwadrat/pozycjakwadratuX_30
+  Maximum Data Path: display/wezkwadrat/pozycjajedzeniaX_3 to display/wezkwadrat/bokA_18
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y1.YQ       Tcko                  0.596   display/wezkwadrat/pozycjakwadratuX<11>
-                                                       display/wezkwadrat/pozycjakwadratuX_10
-    SLICE_X16Y24.F1      net (fanout=8)        2.482   display/wezkwadrat/pozycjakwadratuX<10>
-    SLICE_X16Y24.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_lut<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<6>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<8>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.XB      Tcinxb                0.313   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<10>
-    SLICE_X16Y29.G4      net (fanout=1)        0.582   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-    SLICE_X16Y29.Y       Tilo                  0.616   display/wezkwadrat/pozycjakwadratuX_mux0003<0>
-                                                       display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421
-    SLICE_X17Y3.F1       net (fanout=63)       2.222   display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042
-    SLICE_X17Y3.X        Tilo                  0.562   display/wezkwadrat/pozycjakwadratuX_mux0003<7>
-                                                       display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003601
-    SLICE_X18Y3.BY       net (fanout=1)        0.356   display/wezkwadrat/pozycjakwadratuX_mux0003<7>
-    SLICE_X18Y3.COUT     Tbycy                 0.971   display/wezkwadrat/pozycjakwadratuX_share0000<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.X       Tcinx                 0.454   display/wezkwadrat/pozycjakwadratuX_share0000<30>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<30>
-    SLICE_X17Y29.G1      net (fanout=1)        1.111   display/wezkwadrat/pozycjakwadratuX_share0000<30>
-    SLICE_X17Y29.CLK     Tgck                  0.601   display/wezkwadrat/pozycjakwadratuX<31>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<30>1
-                                                       display/wezkwadrat/pozycjakwadratuX_30
+    SLICE_X10Y17.XQ      Tcko                  0.521   display/wezkwadrat/pozycjajedzeniaX<3>
+                                                       display/wezkwadrat/pozycjajedzeniaX_3
+    SLICE_X17Y17.F1      net (fanout=3)        1.586   display/wezkwadrat/pozycjajedzeniaX<3>
+    SLICE_X17Y17.COUT    Topcyf                1.026   display/wezkwadrat/przyspieszenie_add0000<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_lut<3>_INV_0
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.COUT    Tbyp                  0.130   display/wezkwadrat/przyspieszenie_add0000<5>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<5>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<6>
+    SLICE_X17Y19.CIN     net (fanout=1)        0.000   display/wezkwadrat/Madd_przyspieszenie_add0000_cy<6>
+    SLICE_X17Y19.Y       Tciny                 0.664   display/wezkwadrat/przyspieszenie_add0000<7>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<7>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_xor<8>
+    SLICE_X18Y19.F2      net (fanout=2)        0.333   display/wezkwadrat/przyspieszenie_add0000<8>
+    SLICE_X18Y19.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_lut<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<10>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<12>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<14>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<16>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<18>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<20>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<22>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<24>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<26>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<28>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<30>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.G1      net (fanout=5)        2.185   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.X       Tif5x                 0.853   display/wezkwadrat/bokA_not0001
+                                                       display/wezkwadrat/bokA_not000111
+                                                       display/wezkwadrat/bokA_not00011_f5
+    SLICE_X15Y9.CE       net (fanout=16)       1.939   display/wezkwadrat/bokA_not0001
+    SLICE_X15Y9.CLK      Tceck                 0.155   display/wezkwadrat/bokA<18>
+                                                       display/wezkwadrat/bokA_18
     -------------------------------------------------  ---------------------------
-    Total                                     14.027ns (7.274ns logic, 6.753ns route)
-                                                       (51.9% logic, 48.1% route)
+    Total                                     12.241ns (6.198ns logic, 6.043ns route)
+                                                       (50.6% logic, 49.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     26.035ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               display/wezkwadrat/pozycjakwadratuX_10 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_30 (FF)
+Slack (setup path):     27.793ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               display/wezkwadrat/pozycjajedzeniaX_3 (FF)
+  Destination:          display/wezkwadrat/bokA_18 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      13.889ns (Levels of Logic = 21)
-  Clock Path Skew:      -0.076ns (0.465 - 0.541)
+  Data Path Delay:      12.214ns (Levels of Logic = 17)
+  Clock Path Skew:      0.007ns (0.254 - 0.247)
   Source Clock:         clk25mhz rising at 0.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: display/wezkwadrat/pozycjakwadratuX_10 to display/wezkwadrat/pozycjakwadratuX_30
+  Maximum Data Path: display/wezkwadrat/pozycjajedzeniaX_3 to display/wezkwadrat/bokA_18
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y1.YQ       Tcko                  0.596   display/wezkwadrat/pozycjakwadratuX<11>
-                                                       display/wezkwadrat/pozycjakwadratuX_10
-    SLICE_X16Y24.F1      net (fanout=8)        2.482   display/wezkwadrat/pozycjakwadratuX<10>
-    SLICE_X16Y24.COUT    Topcyf                1.133   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_lut<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<4>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<5>
-    SLICE_X16Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<6>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<7>
-    SLICE_X16Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<8>
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<9>
-    SLICE_X16Y27.XB      Tcinxb                0.313   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-                                                       display/wezkwadrat/Mcompar_pozycjakwadratuX_cmp_ge0000_cy<10>
-    SLICE_X16Y29.G4      net (fanout=1)        0.582   display/wezkwadrat/pozycjakwadratuX_cmp_ge0000
-    SLICE_X16Y29.Y       Tilo                  0.616   display/wezkwadrat/pozycjakwadratuX_mux0003<0>
-                                                       display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421
-    SLICE_X17Y2.F3       net (fanout=63)       1.717   display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042
-    SLICE_X17Y2.X        Tilo                  0.562   display/wezkwadrat/pozycjakwadratuX_mux0003<5>
-                                                       display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003561
-    SLICE_X18Y2.BY       net (fanout=1)        0.567   display/wezkwadrat/pozycjakwadratuX_mux0003<5>
-    SLICE_X18Y2.COUT     Tbycy                 0.971   display/wezkwadrat/pozycjakwadratuX_share0000<4>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>
-    SLICE_X18Y3.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<6>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<7>
-    SLICE_X18Y4.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<8>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<9>
-    SLICE_X18Y5.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<10>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<11>
-    SLICE_X18Y6.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<12>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<13>
-    SLICE_X18Y7.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<14>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<15>
-    SLICE_X18Y8.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<16>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.CIN      net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<17>
-    SLICE_X18Y9.COUT     Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<18>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<19>
-    SLICE_X18Y10.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<20>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<21>
-    SLICE_X18Y11.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<22>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<23>
-    SLICE_X18Y12.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<24>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<25>
-    SLICE_X18Y13.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<26>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<27>
-    SLICE_X18Y14.COUT    Tbyp                  0.156   display/wezkwadrat/pozycjakwadratuX_share0000<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<28>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.CIN     net (fanout=1)        0.000   display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<29>
-    SLICE_X18Y15.X       Tcinx                 0.454   display/wezkwadrat/pozycjakwadratuX_share0000<30>
-                                                       display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<30>
-    SLICE_X17Y29.G1      net (fanout=1)        1.111   display/wezkwadrat/pozycjakwadratuX_share0000<30>
-    SLICE_X17Y29.CLK     Tgck                  0.601   display/wezkwadrat/pozycjakwadratuX<31>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<30>1
-                                                       display/wezkwadrat/pozycjakwadratuX_30
+    SLICE_X10Y17.XQ      Tcko                  0.521   display/wezkwadrat/pozycjajedzeniaX<3>
+                                                       display/wezkwadrat/pozycjajedzeniaX_3
+    SLICE_X17Y17.F1      net (fanout=3)        1.586   display/wezkwadrat/pozycjajedzeniaX<3>
+    SLICE_X17Y17.COUT    Topcyf                1.026   display/wezkwadrat/przyspieszenie_add0000<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_lut<3>_INV_0
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<3>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Madd_przyspieszenie_add0000_cy<4>
+    SLICE_X17Y18.X       Tcinx                 0.489   display/wezkwadrat/przyspieszenie_add0000<5>
+                                                       display/wezkwadrat/Madd_przyspieszenie_add0000_xor<5>
+    SLICE_X18Y17.G3      net (fanout=2)        0.305   display/wezkwadrat/przyspieszenie_add0000<5>
+    SLICE_X18Y17.COUT    Topcyg                1.127   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_lut<5>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<5>
+    SLICE_X18Y18.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<6>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<7>
+    SLICE_X18Y19.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<8>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<9>
+    SLICE_X18Y20.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<10>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<11>
+    SLICE_X18Y21.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<12>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<13>
+    SLICE_X18Y22.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<14>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<15>
+    SLICE_X18Y23.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<16>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<17>
+    SLICE_X18Y24.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<18>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<19>
+    SLICE_X18Y25.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<20>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<21>
+    SLICE_X18Y26.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<22>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<23>
+    SLICE_X18Y27.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<24>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<25>
+    SLICE_X18Y28.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<26>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<27>
+    SLICE_X18Y29.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<28>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.CIN     net (fanout=1)        0.000   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<29>
+    SLICE_X18Y30.COUT    Tbyp                  0.156   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<30>
+                                                       display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.G1      net (fanout=5)        2.185   display/wezkwadrat/Mcompar_przyspieszenie_cmp_lt0000_cy<31>
+    SLICE_X10Y23.X       Tif5x                 0.853   display/wezkwadrat/bokA_not0001
+                                                       display/wezkwadrat/bokA_not000111
+                                                       display/wezkwadrat/bokA_not00011_f5
+    SLICE_X15Y9.CE       net (fanout=16)       1.939   display/wezkwadrat/bokA_not0001
+    SLICE_X15Y9.CLK      Tceck                 0.155   display/wezkwadrat/bokA<18>
+                                                       display/wezkwadrat/bokA_18
     -------------------------------------------------  ---------------------------
-    Total                                     13.889ns (7.430ns logic, 6.459ns route)
-                                                       (53.5% logic, 46.5% route)
+    Total                                     12.214ns (6.199ns logic, 6.015ns route)
+                                                       (50.8% logic, 49.2% route)
 
 --------------------------------------------------------------------------------
 
@@ -991,87 +913,84 @@ Hold Paths: PERIOD analysis for net "pixel_clock/CLKFX_BUF" derived from
 
 --------------------------------------------------------------------------------
 
-Paths for end point display/wezkwadrat/pozycjakwadratuX_6 (SLICE_X23Y0.F4), 1 path
+Paths for end point display/wezkwadrat/pozycjajedzeniaY_21 (SLICE_X0Y22.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.060ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               display/wezkwadrat/pozycjakwadratuX_6 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuX_6 (FF)
+Slack (hold path):      0.856ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               display/wezkwadrat/losY_21 (FF)
+  Destination:          display/wezkwadrat/pozycjajedzeniaY_21 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.060ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.867ns (Levels of Logic = 0)
+  Clock Path Skew:      0.011ns (0.075 - 0.064)
   Source Clock:         clk25mhz rising at 40.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: display/wezkwadrat/pozycjakwadratuX_6 to display/wezkwadrat/pozycjakwadratuX_6
+  Minimum Data Path: display/wezkwadrat/losY_21 to display/wezkwadrat/pozycjajedzeniaY_21
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X23Y0.XQ       Tcko                  0.396   display/wezkwadrat/pozycjakwadratuX<6>
-                                                       display/wezkwadrat/pozycjakwadratuX_6
-    SLICE_X23Y0.F4       net (fanout=8)        0.258   display/wezkwadrat/pozycjakwadratuX<6>
-    SLICE_X23Y0.CLK      Tckf        (-Th)    -0.406   display/wezkwadrat/pozycjakwadratuX<6>
-                                                       display/wezkwadrat/pozycjakwadratuX_mux0002<6>33
-                                                       display/wezkwadrat/pozycjakwadratuX_6
+    SLICE_X1Y22.YQ       Tcko                  0.419   display/wezkwadrat/losY<20>
+                                                       display/wezkwadrat/losY_21
+    SLICE_X0Y22.BX       net (fanout=3)        0.346   display/wezkwadrat/losY<21>
+    SLICE_X0Y22.CLK      Tckdi       (-Th)    -0.102   display/wezkwadrat/pozycjajedzeniaY<21>
+                                                       display/wezkwadrat/pozycjajedzeniaY_21
     -------------------------------------------------  ---------------------------
-    Total                                      1.060ns (0.802ns logic, 0.258ns route)
-                                                       (75.7% logic, 24.3% route)
+    Total                                      0.867ns (0.521ns logic, 0.346ns route)
+                                                       (60.1% logic, 39.9% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point display/wezkwadrat/pozycjakwadratuY_16 (SLICE_X7Y19.G4), 1 path
+Paths for end point display/wezkwadrat/pozycjajedzeniaY_24 (SLICE_X0Y24.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.085ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               display/wezkwadrat/pozycjakwadratuY_16 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuY_16 (FF)
+Slack (hold path):      0.878ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               display/wezkwadrat/losY_24 (FF)
+  Destination:          display/wezkwadrat/pozycjajedzeniaY_24 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.085ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.891ns (Levels of Logic = 0)
+  Clock Path Skew:      0.013ns (0.090 - 0.077)
   Source Clock:         clk25mhz rising at 40.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: display/wezkwadrat/pozycjakwadratuY_16 to display/wezkwadrat/pozycjakwadratuY_16
+  Minimum Data Path: display/wezkwadrat/losY_24 to display/wezkwadrat/pozycjajedzeniaY_24
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X7Y19.YQ       Tcko                  0.419   display/wezkwadrat/pozycjakwadratuY<17>
-                                                       display/wezkwadrat/pozycjakwadratuY_16
-    SLICE_X7Y19.G4       net (fanout=7)        0.260   display/wezkwadrat/pozycjakwadratuY<16>
-    SLICE_X7Y19.CLK      Tckg        (-Th)    -0.406   display/wezkwadrat/pozycjakwadratuY<17>
-                                                       display/wezkwadrat/pozycjakwadratuY_mux0002<16>1
-                                                       display/wezkwadrat/pozycjakwadratuY_16
+    SLICE_X1Y24.XQ       Tcko                  0.396   display/wezkwadrat/losY<24>
+                                                       display/wezkwadrat/losY_24
+    SLICE_X0Y24.BY       net (fanout=3)        0.358   display/wezkwadrat/losY<24>
+    SLICE_X0Y24.CLK      Tckdi       (-Th)    -0.137   display/wezkwadrat/pozycjajedzeniaY<25>
+                                                       display/wezkwadrat/pozycjajedzeniaY_24
     -------------------------------------------------  ---------------------------
-    Total                                      1.085ns (0.825ns logic, 0.260ns route)
-                                                       (76.0% logic, 24.0% route)
+    Total                                      0.891ns (0.533ns logic, 0.358ns route)
+                                                       (59.8% logic, 40.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point display/wezkwadrat/pozycjakwadratuY_29 (SLICE_X7Y17.F4), 1 path
+Paths for end point display/wezkwadrat/pozycjajedzeniaY_28 (SLICE_X2Y29.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.089ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               display/wezkwadrat/pozycjakwadratuY_29 (FF)
-  Destination:          display/wezkwadrat/pozycjakwadratuY_29 (FF)
+Slack (hold path):      0.891ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               display/wezkwadrat/losY_28 (FF)
+  Destination:          display/wezkwadrat/pozycjajedzeniaY_28 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.089ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.851ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.040ns (0.279 - 0.319)
   Source Clock:         clk25mhz rising at 40.000ns
   Destination Clock:    clk25mhz rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: display/wezkwadrat/pozycjakwadratuY_29 to display/wezkwadrat/pozycjakwadratuY_29
+  Minimum Data Path: display/wezkwadrat/losY_28 to display/wezkwadrat/pozycjajedzeniaY_28
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X7Y17.XQ       Tcko                  0.396   display/wezkwadrat/pozycjakwadratuY<29>
-                                                       display/wezkwadrat/pozycjakwadratuY_29
-    SLICE_X7Y17.F4       net (fanout=7)        0.287   display/wezkwadrat/pozycjakwadratuY<29>
-    SLICE_X7Y17.CLK      Tckf        (-Th)    -0.406   display/wezkwadrat/pozycjakwadratuY<29>
-                                                       display/wezkwadrat/pozycjakwadratuY_mux0002<29>1
-                                                       display/wezkwadrat/pozycjakwadratuY_29
+    SLICE_X1Y26.XQ       Tcko                  0.396   display/wezkwadrat/losY<28>
+                                                       display/wezkwadrat/losY_28
+    SLICE_X2Y29.BY       net (fanout=3)        0.318   display/wezkwadrat/losY<28>
+    SLICE_X2Y29.CLK      Tckdi       (-Th)    -0.137   display/wezkwadrat/pozycjajedzeniaY<29>
+                                                       display/wezkwadrat/pozycjajedzeniaY_28
     -------------------------------------------------  ---------------------------
-    Total                                      1.089ns (0.802ns logic, 0.287ns route)
-                                                       (73.6% logic, 26.4% route)
+    Total                                      0.851ns (0.533ns logic, 0.318ns route)
+                                                       (62.6% logic, 37.4% route)
 
 --------------------------------------------------------------------------------
 
@@ -1092,18 +1011,18 @@ Slack: 38.672ns (period - (min high pulse limit / (high pulse / period)))
   Period: 40.000ns
   High pulse: 19.999ns
   High pulse limit: 0.664ns (Tch)
-  Physical resource: display/wezkwadrat/pozycjawrogaX<0>/CLK
-  Logical resource: display/wezkwadrat/pozycjawrogaX_0/CK
-  Location pin: SLICE_X20Y16.CLK
+  Physical resource: display/x<0>/CLK
+  Logical resource: display/x_0/CK
+  Location pin: SLICE_X22Y16.CLK
   Clock network: clk25mhz
 --------------------------------------------------------------------------------
 Slack: 38.672ns (period - (min high pulse limit / (high pulse / period)))
   Period: 40.000ns
   High pulse: 19.999ns
   High pulse limit: 0.664ns (Tch)
-  Physical resource: display/wezkwadrat/pozycjawrogaX<0>/CLK
-  Logical resource: display/wezkwadrat/pozycjawrogaX_1/CK
-  Location pin: SLICE_X20Y16.CLK
+  Physical resource: display/x<0>/CLK
+  Logical resource: display/x_1/CK
+  Location pin: SLICE_X22Y16.CLK
   Clock network: clk25mhz
 --------------------------------------------------------------------------------
 
@@ -1115,8 +1034,8 @@ Derived Constraints for pixel_clock/CLKIN_IBUFG
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|pixel_clock/CLKIN_IBUFG        |     83.333ns|     20.000ns|     30.063ns|            0|            0|            0|       678428|
-| pixel_clock/CLKFX_BUF         |     40.000ns|     14.430ns|          N/A|            0|            0|       678428|            0|
+|pixel_clock/CLKIN_IBUFG        |     83.333ns|     20.000ns|     25.763ns|            0|            0|            0|       930328|
+| pixel_clock/CLKFX_BUF         |     40.000ns|     12.366ns|          N/A|            0|            0|       930328|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -1131,7 +1050,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   14.430|         |         |         |
+clk            |   12.366|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -1140,7 +1059,7 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 678428 paths, 0 nets, and 3588 connections
+Constraints cover 930328 paths, 0 nets, and 3353 connections
 
 Design statistics:
    Minimum period:  20.000ns{1}   (Maximum frequency:  50.000MHz)
@@ -1149,14 +1068,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Mon Apr 20 01:56:59 2020 
+Analysis completed Tue May 05 20:44:08 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4538 MB
+Peak Memory Usage: 4539 MB
 
 
 

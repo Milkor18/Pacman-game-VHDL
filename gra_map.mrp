@@ -9,32 +9,32 @@ Target Device  : xc3s50a
 Target Package : tq144
 Target Speed   : -5
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Mon Apr 20 01:56:44 2020
+Mapped Date    : Tue May 05 20:43:53 2020
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:           290 out of   1,408   20%
-  Number of 4 input LUTs:             1,112 out of   1,408   78%
+  Number of Slice Flip Flops:           311 out of   1,408   22%
+  Number of 4 input LUTs:               969 out of   1,408   68%
 Logic Distribution:
-  Number of occupied Slices:            680 out of     704   96%
-    Number of Slices containing only related logic:     680 out of     680 100%
-    Number of Slices containing unrelated logic:          0 out of     680   0%
+  Number of occupied Slices:            632 out of     704   89%
+    Number of Slices containing only related logic:     632 out of     632 100%
+    Number of Slices containing unrelated logic:          0 out of     632   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,336 out of   1,408   94%
-    Number used as logic:             1,112
-    Number used as a route-thru:        224
+  Total Number of 4 input LUTs:       1,178 out of   1,408   83%
+    Number used as logic:               969
+    Number used as a route-thru:        209
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 15 out of     108   13%
+  Number of bonded IOBs:                 26 out of     108   24%
   Number of BUFGMUXs:                     2 out of      24    8%
   Number of DCMs:                         1 out of       2   50%
 
-Average Fanout of Non-Clock Nets:                3.11
+Average Fanout of Non-Clock Nets:                3.21
 
 Peak Memory Usage:  4442 MB
 Total REAL time to MAP completion:  2 secs 
@@ -94,7 +94,7 @@ INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   3 block(s) optimized away
+   2 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
@@ -103,7 +103,6 @@ Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
 VCC 		XST_VCC
-MUXCY 		display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<0>
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
@@ -118,6 +117,9 @@ Section 6 - IOB Properties
 | blue<1>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | blue<2>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | clk                                | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| enable<0>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| enable<1>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| enable<2>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | green<0>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | green<1>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | green<2>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
@@ -129,6 +131,14 @@ Section 6 - IOB Properties
 | ruch<1>                            | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
 | ruch<2>                            | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
 | ruch<3>                            | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| segment<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| segment<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| segment<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| segment<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| segment<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| segment<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| segment<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| segment<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | vsync                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 

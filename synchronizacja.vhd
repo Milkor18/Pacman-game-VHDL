@@ -6,6 +6,8 @@ entity synchronizacja is
 port(
 clk : in std_logic;
 ruch : in std_logic_vector(3 downto 0);
+segment : out std_logic_vector(7 downto 0);
+enable : out std_logic_vector(2 downto 0);
 hsync : out std_logic;
 vsync : out std_logic;
 red : out std_logic_vector(2 downto 0);
@@ -52,7 +54,7 @@ if rising_edge(clk) then
 end if;	
 end process;
 
-wezkwadrat: entity kwadrat port map (clk => clk, x => x, y => y, rgb => rgb, ruch => ruch);
+wezkwadrat: entity kwadrat port map (clk => clk, x => x, y => y, rgb => rgb, ruch => ruch, segment => segment, enable => enable);
 red <= rgb(7 downto 5);
 green <= rgb(4 downto 2);
 blue <= rgb(1 downto 0);

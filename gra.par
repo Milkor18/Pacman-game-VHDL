@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-IAFNSRJ::  Mon Apr 20 01:56:48 2020
+DESKTOP-IAFNSRJ::  Tue May 05 20:43:57 2020
 
 par -w -intstyle ise -ol high -t 1 gra_map.ncd gra.ncd gra.pcf 
 
@@ -19,7 +19,7 @@ Device speed data version:  "PRODUCTION 1.42 2013-10-13".
 
 Design Summary Report:
 
- Number of External IOBs                          15 out of 108    13%
+ Number of External IOBs                          26 out of 108    24%
 
    Number of External Input IOBs                  5
 
@@ -27,10 +27,10 @@ Design Summary Report:
         Number of LOCed External Input IBUFs      5 out of 5     100%
 
 
-   Number of External Output IOBs                10
+   Number of External Output IOBs                21
 
-      Number of External Output IOBs             10
-        Number of LOCed External Output IOBs     10 out of 10    100%
+      Number of External Output IOBs             21
+        Number of LOCed External Output IOBs     21 out of 21    100%
 
 
    Number of External Bidir IOBs                  0
@@ -38,7 +38,7 @@ Design Summary Report:
 
    Number of BUFGMUXs                        2 out of 24      8%
    Number of DCMs                            1 out of 2      50%
-   Number of Slices                        680 out of 704    96%
+   Number of Slices                        632 out of 704    89%
       Number of SLICEMs                      0 out of 352     0%
 
 
@@ -57,38 +57,38 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:52bd7776) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:308fc852) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:52bd7776) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:308fc852) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:52bd7776) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:308fc852) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:a60820c9) REAL time: 2 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:7659aed0) REAL time: 2 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:a60820c9) REAL time: 2 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:7659aed0) REAL time: 2 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:a60820c9) REAL time: 2 secs 
+Phase 6.36  Local Placement Optimization (Checksum:7659aed0) REAL time: 2 secs 
 
 Phase 7.8  Global Placement
-..................................................................................................
-..
-.....................
-Phase 7.8  Global Placement (Checksum:c8c8b43c) REAL time: 2 secs 
+.................................................................................................................................
+.....
+...........
+Phase 7.8  Global Placement (Checksum:bfa4e8b3) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:c8c8b43c) REAL time: 2 secs 
+Phase 8.5  Local Placement Optimization (Checksum:bfa4e8b3) REAL time: 2 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:6408c8e6) REAL time: 3 secs 
+Phase 9.18  Placement Optimization (Checksum:d5a95e8e) REAL time: 3 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:6408c8e6) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:d5a95e8e) REAL time: 3 secs 
 
 Total REAL time to Placer completion: 3 secs 
 Total CPU  time to Placer completion: 3 secs 
@@ -99,13 +99,13 @@ Writing design to file gra.ncd
 Starting Router
 
 
-Phase  1  : 3786 unrouted;      REAL time: 3 secs 
+Phase  1  : 3764 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 3586 unrouted;      REAL time: 3 secs 
+Phase  2  : 3550 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 805 unrouted;      REAL time: 4 secs 
+Phase  3  : 862 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 805 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
+Phase  4  : 862 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
 Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
@@ -136,7 +136,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            clk25mhz | BUFGMUX_X1Y10| No   |  154 |  0.135     |  0.598      |
+|            clk25mhz | BUFGMUX_X1Y10| No   |  165 |  0.142     |  0.612      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -158,8 +158,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "pixel_clock/CLKF | SETUP       |    25.569ns|    14.430ns|       0|           0
-  X_BUF" derived from  NET "pixel_clock/CLK | HOLD        |     1.060ns|            |       0|           0
+  PERIOD analysis for net "pixel_clock/CLKF | SETUP       |    27.633ns|    12.366ns|       0|           0
+  X_BUF" derived from  NET "pixel_clock/CLK | HOLD        |     0.856ns|            |       0|           0
   IN_IBUFG" PERIOD = 83.3333333 ns HIGH 50% |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET "pixel_clock/CLKIN_IBUFG" PERIOD = 83 | MINLOWPULSE |    63.332ns|    20.000ns|       0|           0
@@ -177,8 +177,8 @@ Derived Constraints for pixel_clock/CLKIN_IBUFG
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|pixel_clock/CLKIN_IBUFG        |     83.333ns|     20.000ns|     30.063ns|            0|            0|            0|       678428|
-| pixel_clock/CLKFX_BUF         |     40.000ns|     14.430ns|          N/A|            0|            0|       678428|            0|
+|pixel_clock/CLKIN_IBUFG        |     83.333ns|     20.000ns|     25.763ns|            0|            0|            0|       930328|
+| pixel_clock/CLKFX_BUF         |     40.000ns|     12.366ns|          N/A|            0|            0|       930328|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -191,7 +191,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 6 secs 
 Total CPU time to PAR completion: 6 secs 
 
-Peak Memory Usage:  4442 MB
+Peak Memory Usage:  4441 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

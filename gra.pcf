@@ -1,9 +1,20 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Apr 20 01:56:46 2020
+// Written by: Map P.20131013 on Tue May 05 20:43:55 2020
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "clk" LOCATE = SITE "P129" LEVEL 1;
+COMP "segment<0>" LOCATE = SITE "P114" LEVEL 1;
+COMP "segment<1>" LOCATE = SITE "P110" LEVEL 1;
+COMP "segment<2>" LOCATE = SITE "P111" LEVEL 1;
+COMP "segment<3>" LOCATE = SITE "P112" LEVEL 1;
+COMP "segment<4>" LOCATE = SITE "P113" LEVEL 1;
+COMP "segment<5>" LOCATE = SITE "P115" LEVEL 1;
+COMP "segment<6>" LOCATE = SITE "P116" LEVEL 1;
+COMP "segment<7>" LOCATE = SITE "P117" LEVEL 1;
+COMP "enable<0>" LOCATE = SITE "P120" LEVEL 1;
+COMP "enable<1>" LOCATE = SITE "P121" LEVEL 1;
+COMP "enable<2>" LOCATE = SITE "P124" LEVEL 1;
 COMP "blue<1>" LOCATE = SITE "P96" LEVEL 1;
 COMP "blue<2>" LOCATE = SITE "P98" LEVEL 1;
 COMP "hsync" LOCATE = SITE "P93" LEVEL 1;

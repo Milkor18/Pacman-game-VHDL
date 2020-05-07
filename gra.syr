@@ -104,6 +104,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling vhdl file "D:/projekty/GraVGA/display.vhd" in Library work.
+Entity <display> compiled.
+Entity <display> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/projekty/GraVGA/kwadrat.vhd" in Library work.
 Entity <kwadrat> compiled.
 Entity <kwadrat> (Architecture <behavioral>) compiled.
@@ -125,15 +128,17 @@ Analyzing hierarchy for entity <synchronizacja> in library <work> (architecture 
 
 Analyzing hierarchy for entity <kwadrat> in library <work> (architecture <Behavioral>).
 
+Analyzing hierarchy for entity <display> in library <work> (architecture <Behavioral>).
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <gra> in library <work> (Architecture <behavioral>).
-WARNING:Xst:752 - "D:/projekty/GraVGA/gra.vhd" line 25: Unconnected input port 'RST_IN' of component 'czestotliwosc' is tied to default value.
-WARNING:Xst:753 - "D:/projekty/GraVGA/gra.vhd" line 25: Unconnected output port 'CLKIN_IBUFG_OUT' of component 'czestotliwosc'.
-WARNING:Xst:753 - "D:/projekty/GraVGA/gra.vhd" line 25: Unconnected output port 'CLK0_OUT' of component 'czestotliwosc'.
-WARNING:Xst:753 - "D:/projekty/GraVGA/gra.vhd" line 25: Unconnected output port 'LOCKED_OUT' of component 'czestotliwosc'.
+WARNING:Xst:752 - "D:/projekty/GraVGA/gra.vhd" line 27: Unconnected input port 'RST_IN' of component 'czestotliwosc' is tied to default value.
+WARNING:Xst:753 - "D:/projekty/GraVGA/gra.vhd" line 27: Unconnected output port 'CLKIN_IBUFG_OUT' of component 'czestotliwosc'.
+WARNING:Xst:753 - "D:/projekty/GraVGA/gra.vhd" line 27: Unconnected output port 'CLK0_OUT' of component 'czestotliwosc'.
+WARNING:Xst:753 - "D:/projekty/GraVGA/gra.vhd" line 27: Unconnected output port 'LOCKED_OUT' of component 'czestotliwosc'.
 Entity <gra> analyzed. Unit <gra> generated.
 
 Analyzing Entity <czestotliwosc> in library <work> (Architecture <behavioral>).
@@ -164,6 +169,9 @@ Entity <synchronizacja> analyzed. Unit <synchronizacja> generated.
 Analyzing Entity <kwadrat> in library <work> (Architecture <Behavioral>).
 Entity <kwadrat> analyzed. Unit <kwadrat> generated.
 
+Analyzing Entity <display> in library <work> (Architecture <Behavioral>).
+Entity <display> analyzed. Unit <display> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -171,68 +179,13 @@ Entity <kwadrat> analyzed. Unit <kwadrat> generated.
 
 Performing bidirectional port resolution...
 
-Synthesizing Unit <kwadrat>.
-    Related source file is "D:/projekty/GraVGA/kwadrat.vhd".
-WARNING:Xst:653 - Signal <bokB> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000010100.
-    Found 4x32-bit ROM for signal <pozycjakwadratuX$mux0004>.
-    Found 4x32-bit ROM for signal <pozycjakwadratuY$mux0004>.
-    Found 8-bit register for signal <rgb>.
-    Found 32-bit up accumulator for signal <bokA>.
-    Found 32-bit comparator greater for signal <bokA$cmp_gt0000> created at line 66.
-    Found 32-bit comparator greater for signal <bokA$cmp_gt0001> created at line 66.
-    Found 32-bit comparator less for signal <bokA$cmp_lt0000> created at line 66.
-    Found 32-bit comparator less for signal <bokA$cmp_lt0001> created at line 66.
-    Found 32-bit up accumulator for signal <pozycjajedzeniaX>.
-    Found 32-bit adder for signal <pozycjajedzeniaX$add0000> created at line 66.
-    Found 32-bit comparator greatequal for signal <pozycjajedzeniaX$cmp_ge0000> created at line 69.
-    Found 32-bit comparator greatequal for signal <pozycjajedzeniaX$cmp_ge0001> created at line 66.
-    Found 32-bit comparator greatequal for signal <pozycjajedzeniaX$cmp_ge0002> created at line 66.
-    Found 32-bit comparator lessequal for signal <pozycjajedzeniaX$cmp_le0000> created at line 66.
-    Found 32-bit comparator lessequal for signal <pozycjajedzeniaX$cmp_le0001> created at line 66.
-    Found 32-bit subtractor for signal <pozycjajedzeniaX$sub0000> created at line 66.
-    Found 32-bit up accumulator for signal <pozycjajedzeniaY>.
-    Found 32-bit comparator greatequal for signal <pozycjajedzeniaY$cmp_ge0000> created at line 72.
-    Found 32-bit register for signal <pozycjakwadratuX>.
-    Found 32-bit adder for signal <pozycjakwadratuX$add0000> created at line 52.
-    Found 32-bit comparator greatequal for signal <pozycjakwadratuX$cmp_ge0000> created at line 40.
-    Found 32-bit comparator lessequal for signal <pozycjakwadratuX$cmp_le0000> created at line 52.
-    Found 32-bit 4-to-1 multiplexer for signal <pozycjakwadratuX$mux0003>.
-    Found 32-bit addsub for signal <pozycjakwadratuX$share0000>.
-    Found 32-bit register for signal <pozycjakwadratuY>.
-    Found 32-bit comparator greatequal for signal <pozycjakwadratuY$cmp_ge0000> created at line 46.
-    Found 32-bit comparator lessequal for signal <pozycjakwadratuY$cmp_le0000> created at line 34.
-    Found 32-bit 4-to-1 multiplexer for signal <pozycjakwadratuY$mux0003>.
-    Found 32-bit addsub for signal <pozycjakwadratuY$share0000>.
-    Found 32-bit subtractor for signal <pozycjakwadratuY$sub0000> created at line 46.
-    Found 32-bit updown counter for signal <pozycjawrogaX>.
-    Found 32-bit comparator less for signal <pozycjawrogaX$cmp_lt0000> created at line 84.
-    Found 32-bit updown counter for signal <pozycjawrogaY>.
-    Found 32-bit comparator less for signal <pozycjawrogaY$cmp_lt0000> created at line 89.
-    Found 32-bit adder for signal <rgb$addsub0000> created at line 113.
-    Found 32-bit subtractor for signal <rgb$addsub0001> created at line 113.
-    Found 32-bit comparator greater for signal <rgb$cmp_gt0000> created at line 105.
-    Found 32-bit comparator greater for signal <rgb$cmp_gt0001> created at line 105.
-    Found 32-bit comparator greater for signal <rgb$cmp_gt0002> created at line 106.
-    Found 32-bit comparator greater for signal <rgb$cmp_gt0003> created at line 106.
-    Found 32-bit comparator greater for signal <rgb$cmp_gt0004> created at line 113.
-    Found 32-bit comparator greater for signal <rgb$cmp_gt0005> created at line 113.
-    Found 32-bit comparator less for signal <rgb$cmp_lt0000> created at line 103.
-    Found 32-bit comparator less for signal <rgb$cmp_lt0001> created at line 103.
-    Found 32-bit comparator less for signal <rgb$cmp_lt0002> created at line 105.
-    Found 32-bit comparator less for signal <rgb$cmp_lt0003> created at line 105.
-    Found 32-bit comparator less for signal <rgb$cmp_lt0004> created at line 106.
-    Found 32-bit comparator less for signal <rgb$cmp_lt0005> created at line 106.
-    Found 32-bit comparator less for signal <rgb$cmp_lt0006> created at line 113.
-    Found 32-bit comparator less for signal <rgb$cmp_lt0007> created at line 113.
+Synthesizing Unit <display>.
+    Related source file is "D:/projekty/GraVGA/display.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x8-bit ROM for signal <segment>.
     Summary:
-	inferred   2 ROM(s).
-	inferred   2 Counter(s).
-	inferred   3 Accumulator(s).
-	inferred  72 D-type flip-flop(s).
-	inferred   8 Adder/Subtractor(s).
-	inferred  30 Comparator(s).
-	inferred  64 Multiplexer(s).
-Unit <kwadrat> synthesized.
+	inferred   1 ROM(s).
+Unit <display> synthesized.
 
 
 Synthesizing Unit <czestotliwosc>.
@@ -240,14 +193,96 @@ Synthesizing Unit <czestotliwosc>.
 Unit <czestotliwosc> synthesized.
 
 
+Synthesizing Unit <kwadrat>.
+    Related source file is "D:/projekty/GraVGA/kwadrat.vhd".
+WARNING:Xst:653 - Signal <koniec> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found finite state machine <FSM_0> for signal <przyspieszenie>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 46                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | przyspieszenie$not0000    (positive)           |
+    | Power Up State     | 00000000000000000000000000000000               |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <kolor>.
+    Found 8-bit register for signal <rgb>.
+    Found 32-bit up accumulator for signal <bokA>.
+    Found 8-bit up counter for signal <czasprzyspieszenia>.
+    Found 4-bit register for signal <kolor>.
+    Found 32-bit comparator greatequal for signal <kolor$cmp_ge0000> created at line 186.
+    Found 32-bit comparator greatequal for signal <kolor$cmp_ge0001> created at line 186.
+    Found 32-bit comparator greatequal for signal <kolor$cmp_ge0002> created at line 183.
+    Found 32-bit comparator greatequal for signal <kolor$cmp_ge0003> created at line 183.
+    Found 32-bit comparator greater for signal <kolor$cmp_gt0000> created at line 185.
+    Found 32-bit comparator greater for signal <kolor$cmp_gt0001> created at line 185.
+    Found 32-bit comparator lessequal for signal <kolor$cmp_le0000> created at line 186.
+    Found 32-bit comparator lessequal for signal <kolor$cmp_le0001> created at line 186.
+    Found 32-bit comparator less for signal <kolor$cmp_lt0000> created at line 185.
+    Found 32-bit comparator less for signal <kolor$cmp_lt0001> created at line 185.
+    Found 32-bit comparator less for signal <kolor$cmp_lt0002> created at line 193.
+    Found 32-bit comparator less for signal <kolor$cmp_lt0003> created at line 195.
+    Found 32-bit up counter for signal <losX>.
+    Found 32-bit comparator less for signal <losX$cmp_lt0000> created at line 83.
+    Found 32-bit up counter for signal <losY>.
+    Found 32-bit register for signal <pozycjajedzeniaX>.
+    Found 32-bit register for signal <pozycjajedzeniaY>.
+    Found 32-bit register for signal <pozycjakwadratuX>.
+    Found 32-bit comparator greatequal for signal <pozycjakwadratuX$cmp_ge0000> created at line 51.
+    Found 32-bit comparator lessequal for signal <pozycjakwadratuX$cmp_le0000> created at line 63.
+    Found 32-bit 4-to-1 multiplexer for signal <pozycjakwadratuX$mux0003>.
+    Found 32-bit 4-to-1 multiplexer for signal <pozycjakwadratuX$mux0004>.
+    Found 32-bit addsub for signal <pozycjakwadratuX$share0000>.
+    Found 32-bit addsub for signal <pozycjakwadratuX$share0001>.
+    Found 32-bit register for signal <pozycjakwadratuY>.
+    Found 32-bit comparator greatequal for signal <pozycjakwadratuY$cmp_ge0000> created at line 57.
+    Found 32-bit comparator lessequal for signal <pozycjakwadratuY$cmp_le0000> created at line 45.
+    Found 32-bit 4-to-1 multiplexer for signal <pozycjakwadratuY$mux0003>.
+    Found 32-bit 4-to-1 multiplexer for signal <pozycjakwadratuY$mux0004>.
+    Found 32-bit addsub for signal <pozycjakwadratuY$share0000>.
+    Found 32-bit addsub for signal <pozycjakwadratuY$share0001>.
+    Found 1-bit register for signal <przenies>.
+    Found 32-bit adder for signal <przyspieszenie$add0000> created at line 101.
+    Found 32-bit adder for signal <przyspieszenie$add0001> created at line 101.
+    Found 32-bit comparator greatequal for signal <przyspieszenie$cmp_ge0000> created at line 101.
+    Found 32-bit comparator greatequal for signal <przyspieszenie$cmp_ge0001> created at line 101.
+    Found 32-bit comparator greater for signal <przyspieszenie$cmp_gt0000> created at line 101.
+    Found 32-bit comparator greater for signal <przyspieszenie$cmp_gt0001> created at line 101.
+    Found 32-bit comparator lessequal for signal <przyspieszenie$cmp_le0000> created at line 101.
+    Found 32-bit comparator lessequal for signal <przyspieszenie$cmp_le0001> created at line 101.
+    Found 32-bit comparator less for signal <przyspieszenie$cmp_lt0000> created at line 101.
+    Found 32-bit comparator less for signal <przyspieszenie$cmp_lt0001> created at line 101.
+    Found 32-bit subtractor for signal <przyspieszenie$sub0000> created at line 101.
+    Found 32-bit subtractor for signal <przyspieszenie$sub0001> created at line 101.
+    Found 4-bit up counter for signal <punkty>.
+    Found 32-bit comparator greater for signal <rgb$cmp_gt0000> created at line 186.
+    Found 32-bit comparator greater for signal <rgb$cmp_gt0001> created at line 186.
+    Found 32-bit comparator less for signal <rgb$cmp_lt0000> created at line 183.
+    Found 32-bit comparator less for signal <rgb$cmp_lt0001> created at line 183.
+    Found 32-bit comparator less for signal <rgb$cmp_lt0002> created at line 186.
+    Found 32-bit comparator less for signal <rgb$cmp_lt0003> created at line 186.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   4 Counter(s).
+	inferred   1 Accumulator(s).
+	inferred 141 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred  31 Comparator(s).
+	inferred 128 Multiplexer(s).
+Unit <kwadrat> synthesized.
+
+
 Synthesizing Unit <synchronizacja>.
     Related source file is "D:/projekty/GraVGA/synchronizacja.vhd".
     Found 1-bit register for signal <vsync>.
     Found 1-bit register for signal <hsync>.
-    Found 32-bit comparator greatequal for signal <hsync$cmp_ge0000> created at line 34.
-    Found 32-bit comparator less for signal <hsync$cmp_lt0000> created at line 34.
-    Found 32-bit comparator greatequal for signal <vsync$cmp_ge0000> created at line 28.
-    Found 32-bit comparator less for signal <vsync$cmp_lt0000> created at line 28.
+    Found 32-bit comparator greatequal for signal <hsync$cmp_ge0000> created at line 36.
+    Found 32-bit comparator less for signal <hsync$cmp_lt0000> created at line 36.
+    Found 32-bit comparator greatequal for signal <vsync$cmp_ge0000> created at line 30.
+    Found 32-bit comparator less for signal <vsync$cmp_lt0000> created at line 30.
     Found 32-bit up counter for signal <x>.
     Found 32-bit up counter for signal <y>.
     Summary:
@@ -267,28 +302,30 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 2
- 4x32-bit ROM                                          : 2
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
 # Adders/Subtractors                                   : 8
- 32-bit adder                                          : 3
- 32-bit addsub                                         : 2
- 32-bit subtractor                                     : 3
-# Counters                                             : 4
- 32-bit up counter                                     : 2
- 32-bit updown counter                                 : 2
-# Accumulators                                         : 3
- 32-bit up accumulator                                 : 3
-# Registers                                            : 5
- 1-bit register                                        : 2
- 32-bit register                                       : 2
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 4
+ 32-bit subtractor                                     : 2
+# Counters                                             : 6
+ 32-bit up counter                                     : 4
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
+# Registers                                            : 9
+ 1-bit register                                        : 3
+ 32-bit register                                       : 4
+ 4-bit register                                        : 1
  8-bit register                                        : 1
-# Comparators                                          : 34
- 32-bit comparator greatequal                          : 8
- 32-bit comparator greater                             : 8
- 32-bit comparator less                                : 14
- 32-bit comparator lessequal                           : 4
-# Multiplexers                                         : 2
- 32-bit 4-to-1 multiplexer                             : 2
+# Comparators                                          : 35
+ 32-bit comparator greatequal                          : 10
+ 32-bit comparator greater                             : 6
+ 32-bit comparator less                                : 13
+ 32-bit comparator lessequal                           : 6
+# Multiplexers                                         : 4
+ 32-bit 4-to-1 multiplexer                             : 4
 
 =========================================================================
 
@@ -296,46 +333,53 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-INFO:Xst:2261 - The FF/Latch <rgb_0> in Unit <wezkwadrat> is equivalent to the following FF/Latch, which will be removed : <rgb_1> 
-INFO:Xst:2261 - The FF/Latch <rgb_4> in Unit <wezkwadrat> is equivalent to the following FF/Latch, which will be removed : <rgb_5> 
-INFO:Xst:2261 - The FF/Latch <rgb_2> in Unit <wezkwadrat> is equivalent to the following 3 FFs/Latches, which will be removed : <rgb_3> <rgb_6> <rgb_7> 
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <display/wezkwadrat/przyspieszenie/FSM> on signal <przyspieszenie[1:1]> with sequential encoding.
+----------------------------------------------
+ State                            | Encoding
+----------------------------------------------
+ 00000000000000000000000000000000 | 0
+ 00000000000000000000000000001000 | 1
+----------------------------------------------
+WARNING:Xst:2677 - Node <kolor_0> of sequential type is unconnected in block <wezkwadrat>.
+WARNING:Xst:2677 - Node <kolor_3> of sequential type is unconnected in block <wezkwadrat>.
+WARNING:Xst:2677 - Node <kolor_0> of sequential type is unconnected in block <kwadrat>.
+WARNING:Xst:2677 - Node <kolor_3> of sequential type is unconnected in block <kwadrat>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 2
- 4x32-bit ROM                                          : 2
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
 # Adders/Subtractors                                   : 8
- 32-bit adder                                          : 3
- 32-bit addsub                                         : 2
- 32-bit subtractor                                     : 3
-# Counters                                             : 4
- 32-bit up counter                                     : 2
- 32-bit updown counter                                 : 2
-# Accumulators                                         : 3
- 32-bit up accumulator                                 : 3
-# Registers                                            : 74
- Flip-Flops                                            : 74
-# Comparators                                          : 34
- 32-bit comparator greatequal                          : 8
- 32-bit comparator greater                             : 8
- 32-bit comparator less                                : 14
- 32-bit comparator lessequal                           : 4
-# Multiplexers                                         : 2
- 32-bit 4-to-1 multiplexer                             : 2
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 4
+ 32-bit subtractor                                     : 2
+# Counters                                             : 6
+ 32-bit up counter                                     : 4
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
+# Registers                                            : 141
+ Flip-Flops                                            : 141
+# Comparators                                          : 35
+ 32-bit comparator greatequal                          : 10
+ 32-bit comparator greater                             : 6
+ 32-bit comparator less                                : 13
+ 32-bit comparator lessequal                           : 6
+# Multiplexers                                         : 4
+ 32-bit 4-to-1 multiplexer                             : 4
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <rgb_0> in Unit <kwadrat> is equivalent to the following FF/Latch, which will be removed : <rgb_1> 
-INFO:Xst:2261 - The FF/Latch <rgb_4> in Unit <kwadrat> is equivalent to the following FF/Latch, which will be removed : <rgb_5> 
-INFO:Xst:2261 - The FF/Latch <rgb_2> in Unit <kwadrat> is equivalent to the following 3 FFs/Latches, which will be removed : <rgb_3> <rgb_6> <rgb_7> 
-WARNING:Xst:1293 - FF/Latch <pozycjajedzeniaX_0> has a constant value of 0 in block <kwadrat>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pozycjajedzeniaY_0> has a constant value of 0 in block <kwadrat>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bokA_0> has a constant value of 0 in block <kwadrat>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <rgb_3> in Unit <kwadrat> is equivalent to the following FF/Latch, which will be removed : <rgb_4> 
+INFO:Xst:2261 - The FF/Latch <rgb_5> in Unit <kwadrat> is equivalent to the following 2 FFs/Latches, which will be removed : <rgb_6> <rgb_7> 
 
 Optimizing unit <gra> ...
 
@@ -345,9 +389,7 @@ Optimizing unit <synchronizacja> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block gra, actual ratio is 105.
-Optimizing block <gra> to meet ratio 100 (+ 5) of 704 slices :
-Area constraint is met for block <gra>, final ratio is 103.
+Found area constraint ratio of 100 (+ 5) on block gra, actual ratio is 92.
 
 Final Macro Processing ...
 
@@ -355,8 +397,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 290
- Flip-Flops                                            : 290
+# Registers                                            : 311
+ Flip-Flops                                            : 311
 
 =========================================================================
 
@@ -382,32 +424,34 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 15
+# IOs                              : 26
 
 Cell Usage :
-# BELS                             : 3020
+# BELS                             : 2576
 #      GND                         : 1
-#      INV                         : 136
-#      LUT1                        : 225
-#      LUT2                        : 717
-#      LUT3                        : 65
-#      LUT4                        : 205
-#      LUT4_D                      : 5
-#      LUT4_L                      : 6
-#      MUXCY                       : 1190
+#      INV                         : 75
+#      LUT1                        : 208
+#      LUT2                        : 518
+#      LUT3                        : 61
+#      LUT4                        : 302
+#      LUT4_D                      : 7
+#      LUT4_L                      : 9
+#      MUXCY                       : 970
+#      MUXF5                       : 2
 #      VCC                         : 1
-#      XORCY                       : 469
-# FlipFlops/Latches                : 290
-#      FDE                         : 221
-#      FDR                         : 36
-#      FDRE                        : 32
-#      FDRS                        : 1
+#      XORCY                       : 422
+# FlipFlops/Latches                : 311
+#      FDE                         : 104
+#      FDR                         : 69
+#      FDRE                        : 132
+#      FDRS                        : 2
+#      FDSE                        : 4
 # Clock Buffers                    : 2
 #      BUFG                        : 2
-# IO Buffers                       : 15
+# IO Buffers                       : 26
 #      IBUF                        : 4
 #      IBUFG                       : 1
-#      OBUF                        : 10
+#      OBUF                        : 21
 # DCMs                             : 1
 #      DCM_SP                      : 1
 =========================================================================
@@ -417,15 +461,13 @@ Device utilization summary:
 
 Selected Device : 3s50atq144-5 
 
- Number of Slices:                      729  out of    704   103% (*) 
- Number of Slice Flip Flops:            290  out of   1408    20%  
- Number of 4 input LUTs:               1359  out of   1408    96%  
- Number of IOs:                          15
- Number of bonded IOBs:                  15  out of    108    13%  
+ Number of Slices:                      638  out of    704    90%  
+ Number of Slice Flip Flops:            311  out of   1408    22%  
+ Number of 4 input LUTs:               1180  out of   1408    83%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    108    24%  
  Number of GCLKs:                         2  out of     24     8%  
  Number of DCMs:                          1  out of      2    50%  
-
-WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -448,7 +490,7 @@ Clock Information:
 -----------------------------------+------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)        | Load  |
 -----------------------------------+------------------------------+-------+
-clk                                | pixel_clock/DCM_SP_INST:CLKFX| 290   |
+clk                                | pixel_clock/DCM_SP_INST:CLKFX| 311   |
 -----------------------------------+------------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -459,9 +501,9 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 21.720ns (Maximum Frequency: 46.040MHz)
-   Minimum input arrival time before clock: 9.495ns
-   Maximum output required time after clock: 5.390ns
+   Minimum period: 22.208ns (Maximum Frequency: 45.029MHz)
+   Minimum input arrival time before clock: 11.621ns
+   Maximum output required time after clock: 6.710ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -470,82 +512,93 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 21.720ns (frequency: 46.040MHz)
-  Total number of paths / destination ports: 682524 / 611
+  Clock period: 22.208ns (frequency: 45.029MHz)
+  Total number of paths / destination ports: 931448 / 694
 -------------------------------------------------------------------------
-Delay:               10.426ns (Levels of Logic = 37)
-  Source:            display/wezkwadrat/pozycjakwadratuX_0 (FF)
-  Destination:       display/wezkwadrat/pozycjajedzeniaX_1 (FF)
+Delay:               10.660ns (Levels of Logic = 45)
+  Source:            display/wezkwadrat/pozycjakwadratuY_1 (FF)
+  Destination:       display/wezkwadrat/pozycjakwadratuY_31 (FF)
   Source Clock:      clk rising 2.1X
   Destination Clock: clk rising 2.1X
 
-  Data Path: display/wezkwadrat/pozycjakwadratuX_0 to display/wezkwadrat/pozycjajedzeniaX_1
+  Data Path: display/wezkwadrat/pozycjakwadratuY_1 to display/wezkwadrat/pozycjakwadratuY_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              6   0.495   0.677  display/wezkwadrat/pozycjakwadratuX_0 (display/wezkwadrat/pozycjakwadratuX_0)
-     LUT1:I0->O            1   0.561   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<0>_rt (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<0>_rt)
-     MUXCY:S->O            1   0.523   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<0> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<1> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<1>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<2> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<2>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<3> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<3>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<4> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<4>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<5> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<5>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<6> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<6>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<7> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<7>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<8> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<8>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<9> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<9>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<10> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<10>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<11> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<11>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<12> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<12>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<13> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<13>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<14> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<14>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<15> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<15>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<16> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<16>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<17> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<17>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<18> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<18>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<19> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<19>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<20> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<20>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<21> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<21>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<22> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<22>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<23> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<23>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<24> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<24>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<25> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<25>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<26> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<26>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<27> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<27>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<28> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<28>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<29> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<29>)
-     MUXCY:CI->O           0   0.065   0.000  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<30> (display/wezkwadrat/Madd_pozycjakwadratuX_add0000_cy<30>)
-     XORCY:CI->O           3   0.654   0.517  display/wezkwadrat/Madd_pozycjakwadratuX_add0000_xor<31> (display/wezkwadrat/pozycjakwadratuX_add0000<31>)
-     LUT2:I1->O            1   0.562   0.000  display/wezkwadrat/Mcompar_pozycjajedzeniaX_cmp_le0000_lut<31> (display/wezkwadrat/Mcompar_pozycjajedzeniaX_cmp_le0000_lut<31>)
-     MUXCY:S->O            1   0.637   0.359  display/wezkwadrat/Mcompar_pozycjajedzeniaX_cmp_le0000_cy<31> (display/wezkwadrat/pozycjajedzeniaX_cmp_le0000)
-     LUT4:I3->O           33   0.561   1.139  display/wezkwadrat/pozycjajedzeniaX_not000111 (display/wezkwadrat/bokA_and0000)
-     LUT2:I1->O           31   0.562   1.073  display/wezkwadrat/pozycjajedzeniaY_not00011 (display/wezkwadrat/pozycjajedzeniaY_not0001)
-     FDE:CE                    0.156          display/wezkwadrat/pozycjajedzeniaY_1
+     FDRE:C->Q             6   0.495   0.677  display/wezkwadrat/pozycjakwadratuY_1 (display/wezkwadrat/pozycjakwadratuY_1)
+     LUT1:I0->O            1   0.561   0.000  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<1>_rt (display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<1>_rt)
+     MUXCY:S->O            1   0.523   0.000  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<1> (display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<2> (display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<3> (display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<4> (display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<5> (display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<6> (display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<7> (display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<7>)
+     MUXCY:CI->O           1   0.179   0.380  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<8> (display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<8>)
+     LUT4_D:I2->O         63   0.561   1.147  display/wezkwadrat/Mcompar_pozycjakwadratuY_cmp_le0000_cy<10>1 (display/wezkwadrat/pozycjakwadratuY_cmp_le0000)
+     LUT2:I1->O            1   0.562   0.380  display/wezkwadrat/Mmux_pozycjakwadratuY_mux00042711 (display/wezkwadrat/N3)
+     LUT4:I2->O            1   0.561   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_lut<0> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<0> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<1> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<2> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<3> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<4> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<5> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<6> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<7> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<8> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<9> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<10> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<11> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<12> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<13> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<14> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<15> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<16> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<17> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<18> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<19> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<20> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<21> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<22> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<23> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<24> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<25> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<26> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<26>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<27> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<27>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<28> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<28>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<29> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<29>)
+     MUXCY:CI->O           0   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<30> (display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_cy<30>)
+     XORCY:CI->O           1   0.654   0.359  display/wezkwadrat/Maddsub_pozycjakwadratuY_share0000_xor<31> (display/wezkwadrat/pozycjakwadratuY_share0000<31>)
+     LUT4:I3->O            1   0.561   0.000  display/wezkwadrat/pozycjakwadratuY_mux0002<31>1 (display/wezkwadrat/pozycjakwadratuY_mux0002<31>)
+     FDRE:D                    0.197          display/wezkwadrat/pozycjakwadratuY_31
     ----------------------------------------
-    Total                     10.426ns (6.661ns logic, 3.765ns route)
-                                       (63.9% logic, 36.1% route)
+    Total                     10.660ns (7.717ns logic, 2.943ns route)
+                                       (72.4% logic, 27.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 13312 / 64
+  Total number of paths / destination ports: 111168 / 64
 -------------------------------------------------------------------------
-Offset:              9.495ns (Levels of Logic = 36)
-  Source:            ruch<3> (PAD)
+Offset:              11.621ns (Levels of Logic = 39)
+  Source:            ruch<0> (PAD)
   Destination:       display/wezkwadrat/pozycjakwadratuX_31 (FF)
   Destination Clock: clk rising 2.1X
 
-  Data Path: ruch<3> to display/wezkwadrat/pozycjakwadratuX_31
+  Data Path: ruch<0> to display/wezkwadrat/pozycjakwadratuX_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             7   0.824   0.710  ruch_3_IBUF (ruch_3_IBUF)
-     LUT2:I0->O            9   0.561   0.805  display/wezkwadrat/pozycjakwadratuY_mux0002<0>211 (display/wezkwadrat/pozycjakwadratuX_and0001)
-     LUT4_D:I0->O         62   0.561   1.104  display/wezkwadrat/Mrom_pozycjakwadratuX_mux000421 (display/wezkwadrat/Mrom_pozycjakwadratuX_mux00042)
-     LUT3:I2->O            0   0.561   0.000  display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003241 (display/wezkwadrat/pozycjakwadratuX_mux0003<1>)
-     MUXCY:DI->O           1   0.713   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<1> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<1>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<2> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<2>)
-     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<3> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<3>)
+     IBUF:I->O            39   0.824   1.183  ruch_0_IBUF (ruch_0_IBUF)
+     LUT4:I0->O           56   0.561   1.187  display/wezkwadrat/Mmux_pozycjakwadratuX_mux00031011_SW0 (display/wezkwadrat/pozycjakwadratuX_mux0005)
+     LUT2:I0->O            1   0.561   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0001_lut<0> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0001_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0001_cy<0> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0001_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0001_cy<1> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0001_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0001_cy<2> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0001_cy<2>)
+     XORCY:CI->O           2   0.654   0.446  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0001_xor<3> (display/wezkwadrat/pozycjakwadratuX_share0001<3>)
+     LUT2:I1->O            1   0.562   0.380  display/wezkwadrat/Mmux_pozycjakwadratuX_mux0003521_SW0 (N10)
+     LUT4:I2->O            1   0.561   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_lut<3> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_lut<3>)
+     MUXCY:S->O            1   0.523   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<3> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<3>)
      MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<4> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<4>)
      MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<5>)
      MUXCY:CI->O           1   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<6> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<6>)
@@ -575,41 +628,42 @@ Offset:              9.495ns (Levels of Logic = 36)
      MUXCY:CI->O           0   0.065   0.000  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<30> (display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_cy<30>)
      XORCY:CI->O           1   0.654   0.359  display/wezkwadrat/Maddsub_pozycjakwadratuX_share0000_xor<31> (display/wezkwadrat/pozycjakwadratuX_share0000<31>)
      LUT4:I3->O            1   0.561   0.000  display/wezkwadrat/pozycjakwadratuX_mux0002<31>1 (display/wezkwadrat/pozycjakwadratuX_mux0002<31>)
-     FDE:D                     0.197          display/wezkwadrat/pozycjakwadratuX_31
+     FDRE:D                    0.197          display/wezkwadrat/pozycjakwadratuX_31
     ----------------------------------------
-    Total                      9.495ns (6.517ns logic, 2.978ns route)
-                                       (68.6% logic, 31.4% route)
+    Total                     11.621ns (8.066ns logic, 3.555ns route)
+                                       (69.4% logic, 30.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 10 / 10
+  Total number of paths / destination ports: 38 / 17
 -------------------------------------------------------------------------
-Offset:              5.390ns (Levels of Logic = 1)
-  Source:            display/wezkwadrat/rgb_2 (FF)
-  Destination:       green<1> (PAD)
+Offset:              6.710ns (Levels of Logic = 2)
+  Source:            display/wezkwadrat/punkty_0 (FF)
+  Destination:       segment<4> (PAD)
   Source Clock:      clk rising 2.1X
 
-  Data Path: display/wezkwadrat/rgb_2 to green<1>
+  Data Path: display/wezkwadrat/punkty_0 to segment<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRS:C->Q             4   0.495   0.499  display/wezkwadrat/rgb_2 (display/wezkwadrat/rgb_2)
-     OBUF:I->O                 4.396          green_1_OBUF (green<1>)
+     FDE:C->Q             11   0.495   0.901  display/wezkwadrat/punkty_0 (display/wezkwadrat/punkty_0)
+     LUT4:I0->O            1   0.561   0.357  display/wezkwadrat/display/Mrom_segment41 (segment_4_OBUF)
+     OBUF:I->O                 4.396          segment_4_OBUF (segment<4>)
     ----------------------------------------
-    Total                      5.390ns (4.891ns logic, 0.499ns route)
-                                       (90.7% logic, 9.3% route)
+    Total                      6.710ns (5.452ns logic, 1.258ns route)
+                                       (81.3% logic, 18.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.03 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.58 secs
  
 --> 
 
-Total memory usage is 4555932 kilobytes
+Total memory usage is 4554860 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

@@ -1,3 +1,4 @@
+vhdl work "display.vhd"
 vhdl work "kwadrat.vhd"
 vhdl work "synchronizacja.vhd"
 vhdl work "czestotliwosc.vhd"

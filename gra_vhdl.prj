@@ -1,3 +1,4 @@
+vhdl work "D:\projekty\GraVGA\display.vhd"
 vhdl work "D:\projekty\GraVGA\kwadrat.vhd"
 vhdl work "D:\projekty\GraVGA\synchronizacja.vhd"
 vhdl work "D:\projekty\GraVGA\czestotliwosc.vhd"
